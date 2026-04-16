@@ -1,7 +1,7 @@
 const baseDatosProblemas = {
     "trabajo": [
         {
-            titulo: "Problema 1: El peso y la estación MIR",
+            titulo: "Problema 1: El coche descapotable",
             enunciado: "Un coche descapotable de masa 500 kg acelera de 0 a 100 km/h en un tiempo de 20 segundos. Determina: <br> a) El trabajo realizado por el motor suponiendo un rozamiento nulo (compruébalo por energía y por cinemática). <br> b) La potencia desarrollada por el motor.",
             solucion: `
                 <div class='paso'>
@@ -10,7 +10,7 @@ const baseDatosProblemas = {
             `
         },
         {
-            titulo: "Problema 2: El carro de Selene (Tierra y Luna)",
+            titulo: "Problema 2: Ejercicio físico",
             enunciado: "Los antiguos griegos consideraban la Luna como una Diosa. Selene es la conductora del carro de la la Luna: después de que Helios, el dios del Sol, termine su viaje a través del cielo, Selene comienza el suyo cuando la noche cae sobre la Tierra. La Luna orbita alrededor de la Tierra en órbitas prácticamente circulares. La distancia entre la Tierra y la Luna es de 384000 km. Conociendo las masas de la Tierra (\\( \\ce{M_T = 5,97 \\cdot 10^{24}}\\) kg) y de la Luna (\\( \\ce{M_L = 7,35 \\cdot 10^{22} } \\) kg), determina: <br> a) La fuerza gravitatoria entre la Tierra y la Luna. <br> b) La velocidad orbital de la Luna. <br> c) El punto de la línea que las une donde sería nula la fuerza neta sobre cualquier masa (despreciando las fuerzas gravitatorias provenientes de los demás cuerpos celestes).",
             solucion: `
                 <div class='paso'>
@@ -47,113 +47,6 @@ const baseDatosProblemas = {
                     \\[ 9,38 \\cdot 10^{20} = 2,44 \\cdot 10^{12} \\cdot  x + 2,71 \\cdot 10^{11} \\cdot x \\implies  9,38 \\cdot 10^{20} = 2,711 \\cdot 10^{12} \\cdot  x \\]
                     \\[ x = \\frac{9,38 \\cdot 10^{20}}{2,711 \\cdot 10^{12}} \\]
                     <span class='resultado'>Resultado:  &nbsp \\( x \\approx 3,46 \\cdot 10^{8} \\text{ m} \\) (medido desde el centro de la Tierra)</span>
-                </div>
-            `
-        },
-        {
-            titulo: "Problema 3: Asteroide en Júpiter",
-            enunciado: `La palabra Júpiter proviene de la mitología romana, padre de dioses y hombres. Júpiter es el planeta más grande del Sistema Solar y posee 80 lunas. Considera los datos de los cuerpos celestes de la siguiente tabla y determina: <br>
-            <table border="1" style="border-collapse: collapse; width: 100%; text-align: center; margin-bottom: 15px;">
-                <tr style="background-color: #f2f2f2;">
-                    <th>Cuerpo Celeste</th>
-                    <th>Masa (kg)</th>
-                    <th>Diámetro (km)</th>
-                </tr>
-                <tr>
-                    <td><strong>Júpiter</strong></td>
-                    <td>\\( 1,889 \\cdot 10^{27} \\)</td>
-                    <td>\\(142984\\)</td>
-                </tr>
-                <tr>
-                    <td><strong>Ganímedes</strong></td>
-                    <td>\\( 1,482 \\cdot 10^{23} \\)</td>
-                    <td>\\(5262\\)</td>
-                </tr>
-            </table> <br> a) El peso que tendría un asteroide de 100 kg en la superficie de Júpiter. <br> b) El peso que tendría un asteroide de 100 kg en la superficie de Ganímedes (la mayor luna de Júpiter) <br> c) Sabiendo que la velocidad orbital de Ganímedes es \\(1,18 \\cdot 10^{4}\\) m/s, obtén el radio orbital.<br> d) La distancia desde Ganímedes a la que debe colocarse el asteroide entre Júpiter y Ganímedes para que sea nula la fuerza gravitaroria sobre él (considerando nulas el resto de fuerzas gravitarorias) La distancia entre Júpiter y Ganímedes es de \\(1,2 \\cdot 10^6\\) km. <br>Datos: &nbsp \\(G = 6,67 \\cdot 10^{-11} N \\cdot m^2 \\cdot kg^{-2} \\)  `,
-            solucion: `
-                <div class='paso'>
-                    <strong>a) Peso en Júpiter:</strong> <br>
-                    El "peso" no es otra cosa que la fuerza de atracción gravitatoria que ejerce un planeta sobre un objeto en su superficie. Para ello, aplicamos directamente la Ley de Gravitación Universal de Newton, asumiendo que la distancia entre los centros de masa es el radio del planeta. Sustituimos nuestros datos: <br>
-                    Radio = \\( \\ce{ \\dfrac{142984}{2} = 71492 \\ km = 71492000 \\ m } \\) <br>
-                    \\[ P_J = G \\cdot \\frac{M_J \\cdot m}{R_J^2} = 6,67 \\cdot 10^{-11} \\cdot \\frac{1,889 \\cdot 10^{27} \\cdot 100 }{(71492000)^2} \\]
-                    <span class='resultado'>Resultado: &nbsp; P = 2465 N</span>
-                </div>
-                <div class='paso'>
-                    <strong>b) Peso en Ganímedes:</strong><br>
-                    Aplicamos exactamente la misma lógica matemática, pero cambiando al protagonista: ahora estamos en la superficie de la luna Ganímedes. <br>
-                    \\[ P_G = G \\cdot \\frac{M_G \\cdot m}{R_G^2} \\]
-                    Sustituimos:
-                    Radio = \\(  \\dfrac{5262}{2} = 2631 \\ km = 2631000 \\ m \\) <br>
-                    \\[ P_G = G \\cdot \\frac{M_G \\cdot m}{R_G^2} = 6,67 \\cdot 10^{-11} \\cdot \\frac{1,482 \\cdot 10^{23} \\cdot 100 }{(2631000)^2} \\]
-                    <span class='resultado'>Resultado: &nbsp; P = 177,5 N</span>
-                </div>
-                <div class='paso'>
-                    <strong>c) Radio orbital:</strong> <br>
-                    Para que un cuerpo (Ganímedes) se mantenga en órbita circular alrededor de otro (Júpiter), la fuerza gravitatoria que lo atrae debe actuar como fuerza centrípeta. Esta es la condición de equilibrio dinámico de las órbitas. F gravitatoria ​= F centrípeta​ <br>
-                    \\[ G \\cdot \\frac{M_J \\cdot M_G}{r^2} =  M_G \\cdot \\frac{v^2}{r} \\]
-                    La masa de Ganímedes (\\(M_G\\)​) y uno de los radios (r) se cancelan en ambos lados de la ecuación. Nos queda: <br>
-                    \\[ r = \\frac{G \\cdot M_J}{v^2} = \\frac{6,67 \\cdot 10^{-11} \\cdot 1,889 \\cdot 10^{27} }{(1,18 \\cdot 10^{4})^2} \\]
-                    <span class='resultado'>Resultado: &nbsp; \\( r = 9,05 \\cdot 10^{8} \\\ m \\)</span>
-                </div>
-                <div class='paso'>
-                    <strong>d) Punto nulo desde Ganímedes:</strong><br>
-                    <iframe src="simulador_jupiter.html" width="100%" height="620" style="border:1px solid #ddd; border-radius:8px; background:#fff;"></iframe>
-                    Queremos colocar el asteroide en un punto entre Júpiter y Ganímedes donde las fuerzas de atracción se anulen. Es decir, Júpiter tira hacia la izquierda con la misma fuerza que Ganímedes tira hacia la derecha. <br> Llamamos x a la distancia desde el asteroide hasta Ganímedes. La distancia desde el asteroide hasta Júpiter será d−x. <br> 
-                    Igualamos los módulos de ambas fuerzas gravitatorias:
-                    \\[ G \\cdot \\frac{M_J \\cdot m}{(d - x)^2} =  G \\cdot \\frac{M_G \\cdot m}{x^2} \\]
-                    Simplificamos G y m en ambos lados:
-                    \\[ \\frac{M_J}{(d - x)^2} =  \\frac{M_G}{x^2} \\]
-                    Truco de examen: Para evitar resolver una ecuación de segundo grado farragosa, aplicamos la raíz cuadrada a ambos lados de la igualdad: <br>
-                    \\[ \\frac{\\sqrt{M_J}}{d - x} =  \\frac{\\sqrt{M_G}}{x} \\rightarrow x = \\frac{d \\cdot \\sqrt{M_G}}{\\sqrt{M_J} + \\sqrt{M_G}}  \\]
-                    Sustituyendo datos: <br>
-                    \\[ x = \\frac{1,26 \\cdot 10^9 \\cdot \\sqrt{1,482 \\cdot 10^{23}}}{\\sqrt{1,889 \\cdot 10^{27}} + \\sqrt{1,482 \\cdot 10^{23}}}  \\]
-                    <span class='resultado'>Resultado: &nbsp; x = 10536 m</span>
-                </div>
-            `
-        },
-        {
-            titulo: "Problema 4: Atracción Tierra-Sol",
-            enunciado: "La Tierra soporta una fuerza de atracción por parte del Sol de \\(3,539 \\cdot 10^{22}\\) N y describe una órbita prácticamente circular alrededor del Sol de 149,6 millones de kilómetros de radio. Sabiendo que la masa de la Tierra es de \\(5,97 \\cdot 10^{24}\\) kg, determina: <br> a) La masa del Sol. <br> b) Justifica por qué la Tierra sobre el Sol y no al contrario, si ambos experimentan la misma fuerza. <br> c) Halla la velocidad orbital de la Tierra. <br> d) Obtén el punto entre la Tierra y el Sol donde sea nula la fuerza gravitatoria (despreciando el resto de fuerzas provenientes de otros cuerpos celestes)",
-            solucion: `
-                <div class='paso'>
-                    <strong>a) Masa del Sol:</strong><br>
-                    Sabemos que la fuerza con la que se atraen se calcula usando la Ley de Gravitación Universal:<br>
-                    \\[ F = G \\frac{M_S \\cdot M_T}{ r^2} \\]
-                    Como nos dan la fuerza, solo tenemos que despejar la Masa del Sol (\\( M_S \\)​):<br>
-                    \\[ M_S = \\frac{F \\cdot r^2}{G \\cdot M_T} \\]
-                    Sustituimos nuestros datos (cuidado con los cuadrados en la calculadora):<br>
-                    \\[ M_S = \\frac{3,539 \\cdot 10^{22} \\cdot (1,496 \\cdot 10^{11})^2}{6,67 \\cdot 10^{-11} \\cdot 5,97 \\cdot 10^{24}} \\]
-                    <span class='resultado'>Resultado:  &nbsp \\( M_s = 1,989 \\cdot 10^{30} kg\\)</span>
-                </div>
-                <div class='paso'>
-                    <strong>b) Justificación:</strong> <br> 
-                    La Tercera Ley de Newton (Acción y Reacción) nos dice que la fuerza que hace el Sol sobre la Tierra es exactamente la misma que la que hace la Tierra sobre el Sol (\\(3,539 \\cdot 10^{22} N\\)). Ninguno tira más fuerte del otro. Entonces, ¿por qué se mueve la Tierra? Entra en juego la Segunda Ley de Newton de la Dinámica: \\( F = m \\cdot a\\). Si despejamos la aceleración: \\(a = \\dfrac {m}{F} \\)​.<br>
-                    La aceleración que sufre la Tierra es: &nbsp  &nbsp  \\( a_T ​= \\dfrac {M_T}{​F} ​= \\dfrac {5,97 \\cdot 10^{24}}{3,539 \\cdot 10^{22}} ​\\approx 0,0059 \\\ m/s^2 \\) <br>
-                    La aceleración que sufre el Sol es: &nbsp  &nbsp \\( a_S ​= \\dfrac {M_S}{​F} ​= \\dfrac {1,989 \\cdot 10^{30}}{3,539 \\cdot 10^{22}} ​\\approx 0,000000017 \\\ m/s^2 \\) <br>
-                    Al tener el Sol una masa tan gigantesca en comparación con la Tierra, su inercia es inmensa. La misma fuerza produce una aceleración notable en la Tierra (obligándola a curvar su trayectoria en una órbita), mientras que la aceleración del Sol es prácticamente nula, por lo que apenas se mueve (en realidad hace un minúsculo "bamboleo" imperceptible).
-                </div>
-                <div class='paso'>
-                    <strong>c) Velocidad orbital:</strong><br>
-                    Para que la Tierra se mantenga en órbita, la fuerza de atracción gravitatoria actúa como la fuerza centrípeta (\\(F_c​ = m \\cdot \\dfrac {v^2}{r} \\)​). Podemos usar directamente el valor de la fuerza que ya nos da el enunciado para simplificar: &nbsp \\( F_{gravitatoria}​ = F_{centrípeta} \\)​<br>
-                    \\[ F = M_T \\cdot \\frac{v^2}{r} \\]
-                    Despejamos la velocidad (v):
-                    \\[ v^2 = \\frac {F \\cdot r}{M_T} \\rightarrow v = \\sqrt{\\frac {F \\cdot r}{M_T} } \\]
-                    Sustituimos:<br>
-                    \\[ v = \\sqrt{\\frac {3,539 \\cdot 10^{22} \\cdot 1,496 \\cdot 10^{11}}{5,97 \\cdot 10^{24}} } \\]
-                    <span class='resultado'>Resultado:  &nbsp \\(\\ce{\\textrm{v} = 2,97 \\cdot 10^{4} m/s}\\)</span>
-                </div>
-                <div class='paso'>
-                    <strong>d) Punto fuerza nula:</strong><br>
-                    Llamaremos x a la distancia desde el satélite hasta la Tierra. Por tanto, la distancia al Sol será d−x.<br>
-                    Igualamos fuerzas gravitatorias: <br>
-                    \\[ G \\frac{M_T \\cdot m}{x^2} =  G \\frac{M_S \\cdot m}{(d - x)^2} \\]
-                    Simplificamos G y m, y aplicamos el "truco" de la raíz cuadrada en ambos lados:<br>
-                    \\[ \\frac{M_T}{x^2} =  \\frac{M_S}{(d - x)^2} \\quad \\rightarrow \\quad \\frac{\\sqrt{M_T}}{x} =  \\frac{\\sqrt{M_S}}{d - x} \\]
-                    Despejamos x:<br>
-                     \\[ x = \\frac{d \\cdot \\sqrt{M_T}}{\\sqrt{M_S} + \\sqrt{M_T}}  \\]
-                    Sustituyendo datos: <br>
-                    \\[ x = \\frac{1,496 \\cdot 10^{11} \\cdot \\sqrt{5,97 \\cdot 10^{24}}}{\\sqrt{1,889 \\cdot 10^{30}} + \\sqrt{5,97 \\cdot 10^{24}}}  \\]
-                    <span class='resultado'>Resultado:  &nbsp \\(\\ce{x = 2,58 \\cdot 10^{8} m}\\)</span>
                 </div>
             `
         }
