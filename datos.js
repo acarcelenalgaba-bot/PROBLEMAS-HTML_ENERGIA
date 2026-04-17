@@ -1,6 +1,34 @@
 const baseDatosProblemas = {
-    "trabajo": [
+    "conceptos": [
         {
+            titulo: "Problema 1: Dinámica y Trabajo en Superficie Horizontal",
+            enunciado: "Un cuerpo se encuentra en reposo sobre una superficie horizontal. En un determinado instante, actúa sobre él una fuerza de 60 N durante un tiempo de 5 s, que le comunica una aceleración de 2 \\(\\ce{m/s^2}\\). Calcular: <br> a) La masa y el peso del cuerpo. <br> b) Velocidad, espacio recorrido, y energía cinética al cabo de los 5 s. <br> c) Trabajo realizado y potencia desarrollada por la fuerza.",
+            solucion: `
+                <div class='paso'>
+                    <strong>a) Cálculo de la masa y el peso:</strong><br>
+                    Utilizamos la segunda ley de Newton para hallar la masa:<br>
+                    \\[m = \\frac{F}{a} = \\frac{60}{2} = 30 \\text{ kg}\\]
+                    Para el peso (usando \\(g = 9,8 \\text{ m/s}^2\\)):<br>
+                    \\[P = m \\cdot g = 30 \\cdot 9,8 = 294 \\text{ N}\\]
+                    <span class='resultado'>Resultado:  &nbsp m = 30 kg; &nbsp P = 294 N </span>
+                </div>
+                <div class='paso'>
+                    <strong>b) Cinemática y Energía Cinética:</strong><br>
+                    Como parte del reposo (\\(v_0 = 0\\)):<br>
+                    - Velocidad: \\[v = a \\cdot t = 2 \\cdot 5 = 10 \\text{ m/s}\\] 
+                    - Espacio recorrido: \\[x = \\frac{1}{2} \\cdot a \\cdot t^2 = 0,5 \\cdot 2 \\cdot 5^2 = 25 \\text{ m}\\] 
+                    - Energía cinética: \\[E_c = \\frac{1}{2} \\cdot m \\cdot v^2 = 0,5 \\cdot 30 \\cdot 10^2 = 1500 \\text{ J}\\]
+                    <span class='resultado'>Resultado:  &nbsp v = 10 m/s; &nbsp x = 25 m; &nbsp E<sub>c</sub> = 1500 J </span>
+                </div>
+                <div class='paso'>
+                    <strong>c) Trabajo y Potencia:</strong><br>
+                    - Trabajo realizado: \\[W = F \\cdot s = 60 \\cdot 25 = 1500 \\text{ J}\\] 
+                    - Potencia desarrollada: \\[P = \\frac{W}{t} = \\frac{1500}{5} = 300 \\text{ W}\\]
+                    <span class='resultado'>Resultado:  &nbsp W = 1500 J; &nbsp P = 300 W </span>
+                </div>
+             `
+        }
+        /* {
             titulo: "Problema 1: El coche descapotable",
             enunciado: "Un coche descapotable de masa 500 kg acelera de 0 a 100 km/h en un tiempo de 20 segundos. Determina: <br> a) El trabajo realizado por el motor suponiendo un rozamiento nulo (compruébalo por energía y por cinemática). <br> b) La potencia desarrollada por el motor.",
             solucion: `
@@ -19,9 +47,9 @@ const baseDatosProblemas = {
                     \\( d = 384.000 \\text{ km} = 384.000.000 \\text{ m} = 3,84 \\cdot 10^8 \\text{ m} \\)
                 </div>
             `
-        }
+        } */
     ],
-    "conservacion": [
+    "fuerzas_vivas": [
         {
             titulo: "Problema 1: Tobogan acuático",
             enunciado: "Un deportista insensato se deja caer por un tobogán acuático. El tobogán tiene una longitud de 20 metros y presenta una inclinación de 45º. El deportista insensato tiene una masa de 75 kg. Dada la presencia de agua, el rozamiento se puede considerar despreciable. Determina: <br> a) La velocidad con la que llega al punto inferior del tobogán. <br> b) El trabajo desarrollado por la fuerza gravitatoria.",
@@ -88,7 +116,91 @@ const baseDatosProblemas = {
             `
         }
     ],
-    "teorema": [
+    "elastica": [
+        {
+            titulo: "Problema 1: Persecución de Toad",
+            enunciado: "El pobre Toad está siendo perseguido por un caparazón azul. Para evitarlo pisa el acelerador y pasa de una velocidad de 30 m/s a 60 m/s. En este proceso de aceleración recorre una distancia de 2000 m. El coeficiente de rozamiento del neumático con el suelo es de μ = 0,3. Sabiendo que Toad tiene una masa de 15 kg y su vehículo una masa de 135 kg, determina: <br> </>a) El trabajo realizado por la fuerza de rozamiento. <br> b) El trabajo realizado por el motor.",
+            solucion: `
+                <div class='paso'>
+                    <strong>Paso previo: Unidades al Sistema Internacional y análisis:</strong><br>
+                    El núcleo del deuterio tiene un protón y un neutrón. Como el neutrón no tiene carga, la interacción eléctrica se produce exclusivamente entre el protón y el electrón.<br>
+                    Antes de operar, debemos pasar la distancia (dada en Angstroms, Å) a metros:<br>
+                    \\[ r = 0,5 \\text{ Å } \\cdot \\frac{10^{-10} \\text{ m}}{1 \\text{ Å }} = 0,5 \\cdot 10^{-10} \\text{ m} = 5 \\cdot 10^{-11} \\text{ m} \\]
+                </div>
+            `
+        },
+        {
+            titulo: "Problema 2: Accidente con choque",
+            enunciado: "Un criminólogo está investigando la secuencia de un accidente donde chocaron 2 vehículos. Tras la colisión, ambos vehículos quedaron unidos y recorrieron 3 metros sobre el asfalto horizontal hasta salir de la carretera, y otros 2 metros por un terraplén de tierra inclinado 15◦ . La masa de ambos vehículos en conjunto es de 1500 kg. El coeficiente de rozamiento con el asfalto es de μ = 0,5, mientras que con la tierra existe un coeficiente de rozamiento de μ = 0,4. Determina: <br> a) Un esquema del recorrido de los vehículos tras la colisión. <br> b) La velocidad inicial de ambos vehículos tras el choque.",
+            solucion: `
+                <div class='paso'>
+                    <strong>Paso previo: Unidades al Sistema Internacional:</strong><br>
+                    Antes de empezar, pasamos todos los datos al S.I. para evitar errores con la constante de Coulomb (\\(k\\)):<br>
+                    - Cargas: \\( q = 5 \\text{ nC} = 5 \\cdot 10^{-9} \\text{ C} \\)<br>
+                    - Distancia: \\( L = 60 \\text{ cm} = 0,6 \\text{ m} \\)<br>
+                    - Masa: \\( m = 5 \\text{ g} = 5 \\cdot 10^{-3} \\text{ kg} \\)
+                </div>
+            `
+        },
+        {
+            titulo: "Problema 3: Disco de hockey",
+            enunciado: "Se lanza un disco de hockey con una masa de 160 gramos propulsado por un muelle comprimido 5 cm. El disco recorre 100 metros en un lago helado horizontal y sube una colina de nieve de inclinación 15◦ , quedándose a una altura de 2 metros. El coeficiente de rozamiento con el hielo es 0,05 y sobre la nieve 0,2. Determina: <br> a) La constante del muelle. <br> b) El trabajo realizado por la fuerza de rozamiento. <br> <br> <div style='text-align: center; margin-bottom: 20px;'> <img src='img/te_tra_3.png' style='max-width: 50%;height: auto; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);'> </div> <br>",
+            solucion: `
+                <div class='paso'>
+                    <strong>Paso 1: Análisis geométrico previo:</strong><br>
+                    Observando el esquema, tenemos un sistema simétrico. La carga positiva \\(q_1\\) es atraída por las cargas negativas \\(q_2\\) y \\(q_3\\).<br>
+                    Conocemos la distancia entre las cargas (la hipotenusa del triángulo formado, \\( r = 3,5 \\text{ m} \\)) y la altura vertical respecto al eje X (\\( y = 1,5 \\text{ m} \\)).<br>
+                    Calculamos la distancia en el eje X (cateto contiguo) usando el Teorema de Pitágoras:<br>
+                    \\[ x = \\sqrt{r^2 - y^2} = \\sqrt{3,5^2 - 1,5^2} = \\sqrt{12,25 - 2,25} = \\sqrt{10} \\approx 3,16 \\text{ m} \\]
+                    Con esto, extraemos el coseno del ángulo \\(\\alpha\\) (ángulo entre la fuerza y el eje X), que usaremos para proyectar los vectores:<br>
+                    \\[ \\cos(\\alpha) = \\frac{\\text{cateto contiguo}}{\\text{hipotenusa}} = \\frac{\\sqrt{10}}{3,5} \\approx 0,9035 \\]
+                </div>
+            `
+        }
+    ],
+    "conservacion": [
+        {
+            titulo: "Problema 1: Persecución de Toad",
+            enunciado: "El pobre Toad está siendo perseguido por un caparazón azul. Para evitarlo pisa el acelerador y pasa de una velocidad de 30 m/s a 60 m/s. En este proceso de aceleración recorre una distancia de 2000 m. El coeficiente de rozamiento del neumático con el suelo es de μ = 0,3. Sabiendo que Toad tiene una masa de 15 kg y su vehículo una masa de 135 kg, determina: <br> </>a) El trabajo realizado por la fuerza de rozamiento. <br> b) El trabajo realizado por el motor.",
+            solucion: `
+                <div class='paso'>
+                    <strong>Paso previo: Unidades al Sistema Internacional y análisis:</strong><br>
+                    El núcleo del deuterio tiene un protón y un neutrón. Como el neutrón no tiene carga, la interacción eléctrica se produce exclusivamente entre el protón y el electrón.<br>
+                    Antes de operar, debemos pasar la distancia (dada en Angstroms, Å) a metros:<br>
+                    \\[ r = 0,5 \\text{ Å } \\cdot \\frac{10^{-10} \\text{ m}}{1 \\text{ Å }} = 0,5 \\cdot 10^{-10} \\text{ m} = 5 \\cdot 10^{-11} \\text{ m} \\]
+                </div>
+            `
+        },
+        {
+            titulo: "Problema 2: Accidente con choque",
+            enunciado: "Un criminólogo está investigando la secuencia de un accidente donde chocaron 2 vehículos. Tras la colisión, ambos vehículos quedaron unidos y recorrieron 3 metros sobre el asfalto horizontal hasta salir de la carretera, y otros 2 metros por un terraplén de tierra inclinado 15◦ . La masa de ambos vehículos en conjunto es de 1500 kg. El coeficiente de rozamiento con el asfalto es de μ = 0,5, mientras que con la tierra existe un coeficiente de rozamiento de μ = 0,4. Determina: <br> a) Un esquema del recorrido de los vehículos tras la colisión. <br> b) La velocidad inicial de ambos vehículos tras el choque.",
+            solucion: `
+                <div class='paso'>
+                    <strong>Paso previo: Unidades al Sistema Internacional:</strong><br>
+                    Antes de empezar, pasamos todos los datos al S.I. para evitar errores con la constante de Coulomb (\\(k\\)):<br>
+                    - Cargas: \\( q = 5 \\text{ nC} = 5 \\cdot 10^{-9} \\text{ C} \\)<br>
+                    - Distancia: \\( L = 60 \\text{ cm} = 0,6 \\text{ m} \\)<br>
+                    - Masa: \\( m = 5 \\text{ g} = 5 \\cdot 10^{-3} \\text{ kg} \\)
+                </div>
+            `
+        },
+        {
+            titulo: "Problema 3: Disco de hockey",
+            enunciado: "Se lanza un disco de hockey con una masa de 160 gramos propulsado por un muelle comprimido 5 cm. El disco recorre 100 metros en un lago helado horizontal y sube una colina de nieve de inclinación 15◦ , quedándose a una altura de 2 metros. El coeficiente de rozamiento con el hielo es 0,05 y sobre la nieve 0,2. Determina: <br> a) La constante del muelle. <br> b) El trabajo realizado por la fuerza de rozamiento. <br> <br> <div style='text-align: center; margin-bottom: 20px;'> <img src='img/te_tra_3.png' style='max-width: 50%;height: auto; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);'> </div> <br>",
+            solucion: `
+                <div class='paso'>
+                    <strong>Paso 1: Análisis geométrico previo:</strong><br>
+                    Observando el esquema, tenemos un sistema simétrico. La carga positiva \\(q_1\\) es atraída por las cargas negativas \\(q_2\\) y \\(q_3\\).<br>
+                    Conocemos la distancia entre las cargas (la hipotenusa del triángulo formado, \\( r = 3,5 \\text{ m} \\)) y la altura vertical respecto al eje X (\\( y = 1,5 \\text{ m} \\)).<br>
+                    Calculamos la distancia en el eje X (cateto contiguo) usando el Teorema de Pitágoras:<br>
+                    \\[ x = \\sqrt{r^2 - y^2} = \\sqrt{3,5^2 - 1,5^2} = \\sqrt{12,25 - 2,25} = \\sqrt{10} \\approx 3,16 \\text{ m} \\]
+                    Con esto, extraemos el coseno del ángulo \\(\\alpha\\) (ángulo entre la fuerza y el eje X), que usaremos para proyectar los vectores:<br>
+                    \\[ \\cos(\\alpha) = \\frac{\\text{cateto contiguo}}{\\text{hipotenusa}} = \\frac{\\sqrt{10}}{3,5} \\approx 0,9035 \\]
+                </div>
+            `
+        }
+    ],
+    "sistemas": [
         {
             titulo: "Problema 1: Persecución de Toad",
             enunciado: "El pobre Toad está siendo perseguido por un caparazón azul. Para evitarlo pisa el acelerador y pasa de una velocidad de 30 m/s a 60 m/s. En este proceso de aceleración recorre una distancia de 2000 m. El coeficiente de rozamiento del neumático con el suelo es de μ = 0,3. Sabiendo que Toad tiene una masa de 15 kg y su vehículo una masa de 135 kg, determina: <br> </>a) El trabajo realizado por la fuerza de rozamiento. <br> b) El trabajo realizado por el motor.",
