@@ -51,7 +51,7 @@ const baseDatosProblemas = {
         },
         {
             titulo: "Problema 3: Pelota de pinball",
-            enunciado: "Una pelota en un pinball es lanzada inicialmente por un muelle comprimido 2 cm. La constante del muelle es k = 3200 N/m. La pelota tiene una masa de 80 g. Sabiendo que el pinball tiene una inclinación de 15◦ y que el coeficiente de rozamiento entre la pelota y la superficie del pinball es 0,05, determina: <br> </>a) La velocidad con la que sale la pelota del muelle. <br> b) La altura que alcanza la pelota. <br> <div style='text-align: center; margin-bottom: 20px;'> <img src='img/cons_3.png' style='max-width: 30%;height: auto; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);'> </div> <br>",
+            enunciado: "Una pelota en un pinball es lanzada inicialmente por un muelle comprimido 2 cm. La constante del muelle es k = 3200 N/m. La pelota tiene una masa de 80 g. Sabiendo que el pinball tiene una inclinación de 15◦ y que el coeficiente de rozamiento entre la pelota y la superficie del pinball es 0,05, determina: <br> </>a) La velocidad con la que sale la pelota del muelle. <br> b) La altura que alcanza la pelota. <br> <br> <div style='text-align: center; margin-bottom: 20px;'> <img src='img/cons_3.png' style='max-width: 30%;height: auto; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);'> </div> <br>",
             solucion: `
                 <div class='paso'>
                     <strong>Paso previo: Sistema Internacional:</strong><br>
@@ -116,7 +116,7 @@ const baseDatosProblemas = {
         },
         {
             titulo: "Problema 3: Disco de hockey",
-            enunciado: "Se lanza un disco de hockey con una masa de 160 gramos propulsado por un muelle comprimido 5 cm. El disco recorre 100 metros en un lago helado horizontal y sube una colina de nieve de inclinación 15◦ , quedándose a una altura de 2 metros. El coeficiente de rozamiento con el hielo es 0,05 y sobre la nieve 0,2. Determina: <br> a) La constante del muelle. <br> b) El trabajo realizado por la fuerza de rozamiento.",
+            enunciado: "Se lanza un disco de hockey con una masa de 160 gramos propulsado por un muelle comprimido 5 cm. El disco recorre 100 metros en un lago helado horizontal y sube una colina de nieve de inclinación 15◦ , quedándose a una altura de 2 metros. El coeficiente de rozamiento con el hielo es 0,05 y sobre la nieve 0,2. Determina: <br> a) La constante del muelle. <br> b) El trabajo realizado por la fuerza de rozamiento. <br> <br> <div style='text-align: center; margin-bottom: 20px;'> <img src='img/te_tra_3.png' style='max-width: 50%;height: auto; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);'> </div> <br>",
             solucion: `
                 <div class='paso'>
                     <strong>Paso 1: Análisis geométrico previo:</strong><br>
