@@ -1,7 +1,7 @@
 const baseDatosProblemas = {
     "conceptos": [
         {
-            titulo: "Problema 1: Dinámica y Trabajo en Superficie Horizontal",
+            titulo: "Problema 1: Dinámica y Trabajo en superficie horizontal",
             enunciado: "Un cuerpo se encuentra en reposo sobre una superficie horizontal. En un determinado instante, actúa sobre él una fuerza de 60 N durante un tiempo de 5 s, que le comunica una aceleración de 2 \\(\\ce{m/s^2}\\). Calcular: <br> a) La masa y el peso del cuerpo. <br> b) Velocidad, espacio recorrido, y energía cinética al cabo de los 5 s. <br> c) Trabajo realizado y potencia desarrollada por la fuerza.",
             solucion: `
                 <div class='paso'>
@@ -27,6 +27,46 @@ const baseDatosProblemas = {
                     <span class='resultado'>Resultado:  &nbsp W = 1500 J; &nbsp P = 300 W </span>
                 </div>
              `
+        }, 
+        {
+            titulo: "Problema 2: Trabajo Mecánico en el Desplazamiento de un Cuerpo",
+            enunciado: "Se tiene que trasladar un cuerpo que pesa 50 N a una distancia de 20 m. ¿Qué trabajo se realiza en los siguientes casos? <br> a) Empujando el cuerpo con una fuerza de 3 N sin conseguir moverlo. <br> b) Empujando el cuerpo con una fuerza de 5 N en la misma dirección del desplazamiento, consiguiéndolo.",
+            solucion: `
+                <div class='paso'>
+                    <strong>a) Trabajo cuando no hay movimiento:</strong><br>
+                    El trabajo mecánico (\\(W\\)) se define como el producto de la fuerza por el desplazamiento y el coseno del ángulo entre ambos. Si no hay desplazamiento (\\(x = 0\\)), el trabajo es nulo:<br>
+                    \\[W = F \\cdot x \\cdot \\cos(\\alpha) = 3 \\cdot 0 \\cdot \\cos(0^\\circ) = 0 \\text{ J}\\]
+                    <span class='resultado'>Resultado: &nbsp W = 0 J</span>
+                </div>
+                <div class='paso'>
+                    <strong>b) Trabajo con desplazamiento en la misma dirección:</strong><br>
+                    En este caso, la fuerza de 5 N logra desplazar el cuerpo 20 m. Al ser en la misma dirección, el ángulo \\(\\alpha = 0^\\circ\\) (y por lo tanto \\(\\cos(0^\\circ) = 1\\)):<br>
+                    \\[W = F \\cdot x \\cdot \\cos(0^\\circ) = 5 \\cdot 20 \\cdot 1 = 100 \\text{ J}\\]
+                    <span class='resultado'>Resultado: &nbsp W = 100 J</span>
+                </div>
+            `
+        },
+        {
+            titulo: "Problema 3: Potencia de una Grúa en CV",
+            enunciado: "Una grúa pretende subir una carga de 500 kg a una altura de 30 metros en un tiempo de 24 segundos. Calcula la potencia, en CV, que debe tener la grúa. <br> Datos: 1 CV = 735 W.",
+            solucion: `
+                <div class='paso'>
+                    <strong>1. Cálculo del Trabajo (W):</strong><br>
+                    Para elevar la carga, la grúa debe realizar un trabajo equivalente a la variación de la energía potencial gravitatoria. Usamos \\(g = 9,8 \\text{ m/s}^2\\):<br>
+                    \\[W = m \\cdot g \\cdot h = 500 \\cdot 9,8 \\cdot 30 = 147000 \\text{ J}\\]
+                </div>
+                <div class='paso'>
+                    <strong>2. Cálculo de la Potencia en Vatios (W):</strong><br>
+                    La potencia es el trabajo realizado por unidad de tiempo:<br>
+                    \\[P = \\frac{W}{t} = \\frac{147000}{24} = 6125 \\text{ W}\\]
+                </div>
+                <div class='paso'>
+                    <strong>3. Conversión a Caballos de Vapor (CV):</strong><br>
+                    Sabiendo que \\(1 \\text{ CV} \\approx 735 \\text{ W}\\):<br>
+                    \\[P_{\\text{CV}} = \\frac{6125}{735} \\approx 8,33 \\text{ CV}\\]
+                    <span class='resultado'>Resultado: &nbsp P = 8,33 CV</span>
+                </div>
+            `
         }
         /* {
             titulo: "Problema 1: El coche descapotable",
