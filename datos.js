@@ -67,7 +67,85 @@ const baseDatosProblemas = {
                     <span class='resultado'>Resultado: &nbsp P = 8,33 CV</span>
                 </div>
             `
-        }
+        },
+        {
+            titulo: "Problema 4: Tiempo de elevación de un montacargas",
+            enunciado: "Un montacargas tiene que subir un objeto de 1000 kg de masa a una altura de 20 metros. Si el motor tiene una potencia de 25 CV, calcular el tiempo que tardará en hacerlo.",
+            solucion: `
+                <div class='paso'>
+                    <strong>1. Conversión de Potencia a Vatios (W):</strong><br>
+                    Primero, convertimos la potencia de Caballos de Vapor (CV) al Sistema Internacional (W), sabiendo que \\(1 \\text{ CV} \\approx 735 \\text{ W}\\):<br>
+                    \\[P = 25 \\cdot 735 = 18375 \\text{ W}\\]
+                </div>
+                <div class='paso'>
+                    <strong>2. Cálculo del Trabajo Necesario (W):</strong><br>
+                    El trabajo realizado para elevar el objeto es igual a su energía potencial (usando \\(g = 9,8 \\text{ m/s}^2\\)):<br>
+                    \\[W = m \\cdot g \\cdot h = 1000 \\cdot 9,8 \\cdot 20 = 196000 \\text{ J}\\]
+                </div>
+                <div class='paso'>
+                    <strong>3. Cálculo del Tiempo (t):</strong><br>
+                    A partir de la fórmula de la potencia \\(P = \\frac{W}{t}\\), despejamos el tiempo:<br>
+                    \\[t = \\frac{W}{P} = \\frac{196000}{18375} \\approx 10,67 \\text{ s}\\]
+                    <span class='resultado'>Resultado: &nbsp t = 10,67 s</span>
+                </div>
+            `
+        },
+        {
+            titulo: "Problema 5: Trabajo en la subida de un puerto de montaña",
+            enunciado: "Un coche de 1200 kg de masa sube un puerto de montaña de pendiente 15 % a una velocidad constante de 72 km/h. Calcula la altura que sube y el trabajo realizado por el motor durante una hora.",
+            solucion: `
+                <div class='paso'>
+                    <strong>1. Conversión de unidades y análisis de la pendiente:</strong><br>
+                    Primero, pasamos la velocidad al S.I. y el tiempo a segundos:<br>
+                    \\(v = 72 \\text{ km/h} = \\frac{72}{3,6} = 20 \\text{ m/s}\\)<br>
+                    \\(t = 1 \\text{ h} = 3600 \\text{ s}\\)<br>
+                    Una pendiente del 15% significa que por cada 100 m de avance horizontal, se suben 15 m en vertical. Esto equivale a: \\( \\\ tan(\\alpha) = \\frac { sen(\\alpha)}{cos(\\alpha)} = \\frac {15}{100} = 0,15 \\).<br>
+                    Calculamos el ángulo: \\(\\alpha = \\arctan(0,15) \\approx 8,53^\\circ\\).
+                </div>
+                <div class='paso'>
+                    <strong>2. Cálculo de la distancia recorrida y la altura (h):</strong><br>
+                    La distancia total recorrida sobre la pendiente (la hipotenusa) es:<br>
+                    \\[x = v \\cdot t = 20 \\cdot 3600 = 72000 \\text{ m}\\]
+                    La altura vertical alcanzada es:<br>
+                    \\[h = x \\cdot sen(\\alpha) = 72000 \\cdot sen(8,53^\\circ) \\approx 10680 \\text{ m}\\]
+                </div>
+                <div class='paso'>
+                    <strong>3. Cálculo del Trabajo (W):</strong><br>
+                    Como la velocidad es constante, el motor solo tiene que vencer el peso (en ausencia de rozamiento). El trabajo equivale al aumento de energía potencial:<br>
+                    \\[W = m \\cdot g \\cdot h = 1200 \\cdot 9,8 \\cdot 10680 = 125596800 \\text{ J}\\]
+                    En notación científica: \\(1,26 \\cdot 10^8 \\text{ J}\\).<br>
+                    <span class='resultado'>Resultado: &nbsp h \\(\\approx\\) 10680 m; &nbsp W \\(\\approx 1,26 \\cdot 10^8 \\) J</span>
+                </div>
+            `
+        },
+        {
+            titulo: "Problema 6: Energía cinética, trabajo y conversión energética",
+            enunciado: "a) Calcula la energía cinética de un camión de 20 toneladas lanzado a 150 km/h. <br> b) Calcula el trabajo necesario para elevar un contenedor de 1,5 toneladas hasta una altura de 20 m. <br> c) Si toda la energía del camión se pudiera transformar en trabajo, ¿cuánto podríamos elevar el contenedor?",
+            solucion: `
+                <div class='paso'>
+                    <strong>a) Energía cinética del camión:</strong><br>
+                    Primero, convertimos las unidades al Sistema Internacional:<br>
+                    \\(m = 20 \\text{ t} = 20000 \\text{ kg}\\)<br>
+                    \\(v = 150 \\text{ km/h} = \\frac{150}{3,6} \\approx 41,67 \\text{ m/s}\\)<br>
+                    Aplicamos la fórmula de la energía cinética:<br>
+                    \\[E_c = \\frac{1}{2} \\cdot m \\cdot v^2 = \\frac{1}{2} \\cdot 20000 \\cdot (41,67)^2 \\approx 17363889 \\text{ J}\\]
+                    <span class='resultado'>Resultado: &nbsp \\(E_c \\approx 1,74 \\cdot 10^7 \\text{ J}\\)</span>
+                </div>
+                <div class='paso'>
+                    <strong>b) Trabajo para elevar el contenedor:</strong><br>
+                    Convertimos la masa: \\(m_c = 1,5 \\text{ t} = 1500 \\text{ kg}\\).<br>
+                    El trabajo necesario equivale a la energía potencial ganada (con \\(g = 9,8 \\text{ m/s}^2\\)):<br>
+                    \\[W = m \\cdot g \\cdot h = 1500 \\cdot 9,8 \\cdot 20 = 294000 \\text{ J}\\]
+                    <span class='resultado'>Resultado: &nbsp \\(W = 2,94 \\cdot 10^5 \\text{ J}\\)</span>
+                </div>
+                <div class='paso'>
+                    <strong>c) Altura máxima utilizando la energía del camión:</strong><br>
+                    Igualamos la energía cinética del camión al trabajo de elevación (\\(E_c = W\\)) y despejamos la altura (\\(h\\)) para el contenedor de 1.500 kg:<br>
+                    \\[h = \\frac{E_c}{m \\cdot g} = \\frac{17363889}{1500 \\cdot 9,8} \\approx 1181,22 \\text{ m}\\]
+                    <span class='resultado'>Resultado: &nbsp \\(h \\approx 1181,22 \\text{ m}\\)</span>
+                </div>
+            `
+        }      
         /* {
             titulo: "Problema 1: El coche descapotable",
             enunciado: "Un coche descapotable de masa 500 kg acelera de 0 a 100 km/h en un tiempo de 20 segundos. Determina: <br> a) El trabajo realizado por el motor suponiendo un rozamiento nulo (compruébalo por energía y por cinemática). <br> b) La potencia desarrollada por el motor.",
@@ -90,7 +168,7 @@ const baseDatosProblemas = {
         } */
     ],
     "fuerzas_vivas": [
-        {
+/*         {
             titulo: "Problema 1: Tobogan acuático",
             enunciado: "Un deportista insensato se deja caer por un tobogán acuático. El tobogán tiene una longitud de 20 metros y presenta una inclinación de 45º. El deportista insensato tiene una masa de 75 kg. Dada la presencia de agua, el rozamiento se puede considerar despreciable. Determina: <br> a) La velocidad con la que llega al punto inferior del tobogán. <br> b) El trabajo desarrollado por la fuerza gravitatoria.",
             solucion: `
@@ -155,9 +233,9 @@ const baseDatosProblemas = {
                 </div>
             `
         }
-    ],
+ */    ],
     "elastica": [
-        {
+/*         {
             titulo: "Problema 1: Persecución de Toad",
             enunciado: "El pobre Toad está siendo perseguido por un caparazón azul. Para evitarlo pisa el acelerador y pasa de una velocidad de 30 m/s a 60 m/s. En este proceso de aceleración recorre una distancia de 2000 m. El coeficiente de rozamiento del neumático con el suelo es de μ = 0,3. Sabiendo que Toad tiene una masa de 15 kg y su vehículo una masa de 135 kg, determina: <br> </>a) El trabajo realizado por la fuerza de rozamiento. <br> b) El trabajo realizado por el motor.",
             solucion: `
@@ -197,9 +275,9 @@ const baseDatosProblemas = {
                 </div>
             `
         }
-    ],
+ */    ],
     "conservacion": [
-        {
+/*         {
             titulo: "Problema 1: Persecución de Toad",
             enunciado: "El pobre Toad está siendo perseguido por un caparazón azul. Para evitarlo pisa el acelerador y pasa de una velocidad de 30 m/s a 60 m/s. En este proceso de aceleración recorre una distancia de 2000 m. El coeficiente de rozamiento del neumático con el suelo es de μ = 0,3. Sabiendo que Toad tiene una masa de 15 kg y su vehículo una masa de 135 kg, determina: <br> </>a) El trabajo realizado por la fuerza de rozamiento. <br> b) El trabajo realizado por el motor.",
             solucion: `
@@ -238,48 +316,11 @@ const baseDatosProblemas = {
                     \\[ \\cos(\\alpha) = \\frac{\\text{cateto contiguo}}{\\text{hipotenusa}} = \\frac{\\sqrt{10}}{3,5} \\approx 0,9035 \\]
                 </div>
             `
-        }
+        } */
     ],
     "sistemas": [
-        {
-            titulo: "Problema 1: Persecución de Toad",
-            enunciado: "El pobre Toad está siendo perseguido por un caparazón azul. Para evitarlo pisa el acelerador y pasa de una velocidad de 30 m/s a 60 m/s. En este proceso de aceleración recorre una distancia de 2000 m. El coeficiente de rozamiento del neumático con el suelo es de μ = 0,3. Sabiendo que Toad tiene una masa de 15 kg y su vehículo una masa de 135 kg, determina: <br> </>a) El trabajo realizado por la fuerza de rozamiento. <br> b) El trabajo realizado por el motor.",
-            solucion: `
-                <div class='paso'>
-                    <strong>Paso previo: Unidades al Sistema Internacional y análisis:</strong><br>
-                    El núcleo del deuterio tiene un protón y un neutrón. Como el neutrón no tiene carga, la interacción eléctrica se produce exclusivamente entre el protón y el electrón.<br>
-                    Antes de operar, debemos pasar la distancia (dada en Angstroms, Å) a metros:<br>
-                    \\[ r = 0,5 \\text{ Å } \\cdot \\frac{10^{-10} \\text{ m}}{1 \\text{ Å }} = 0,5 \\cdot 10^{-10} \\text{ m} = 5 \\cdot 10^{-11} \\text{ m} \\]
-                </div>
-            `
-        },
-        {
-            titulo: "Problema 2: Accidente con choque",
-            enunciado: "Un criminólogo está investigando la secuencia de un accidente donde chocaron 2 vehículos. Tras la colisión, ambos vehículos quedaron unidos y recorrieron 3 metros sobre el asfalto horizontal hasta salir de la carretera, y otros 2 metros por un terraplén de tierra inclinado 15◦ . La masa de ambos vehículos en conjunto es de 1500 kg. El coeficiente de rozamiento con el asfalto es de μ = 0,5, mientras que con la tierra existe un coeficiente de rozamiento de μ = 0,4. Determina: <br> a) Un esquema del recorrido de los vehículos tras la colisión. <br> b) La velocidad inicial de ambos vehículos tras el choque.",
-            solucion: `
-                <div class='paso'>
-                    <strong>Paso previo: Unidades al Sistema Internacional:</strong><br>
-                    Antes de empezar, pasamos todos los datos al S.I. para evitar errores con la constante de Coulomb (\\(k\\)):<br>
-                    - Cargas: \\( q = 5 \\text{ nC} = 5 \\cdot 10^{-9} \\text{ C} \\)<br>
-                    - Distancia: \\( L = 60 \\text{ cm} = 0,6 \\text{ m} \\)<br>
-                    - Masa: \\( m = 5 \\text{ g} = 5 \\cdot 10^{-3} \\text{ kg} \\)
-                </div>
-            `
-        },
-        {
-            titulo: "Problema 3: Disco de hockey",
-            enunciado: "Se lanza un disco de hockey con una masa de 160 gramos propulsado por un muelle comprimido 5 cm. El disco recorre 100 metros en un lago helado horizontal y sube una colina de nieve de inclinación 15◦ , quedándose a una altura de 2 metros. El coeficiente de rozamiento con el hielo es 0,05 y sobre la nieve 0,2. Determina: <br> a) La constante del muelle. <br> b) El trabajo realizado por la fuerza de rozamiento. <br> <br> <div style='text-align: center; margin-bottom: 20px;'> <img src='img/te_tra_3.png' style='max-width: 50%;height: auto; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);'> </div> <br>",
-            solucion: `
-                <div class='paso'>
-                    <strong>Paso 1: Análisis geométrico previo:</strong><br>
-                    Observando el esquema, tenemos un sistema simétrico. La carga positiva \\(q_1\\) es atraída por las cargas negativas \\(q_2\\) y \\(q_3\\).<br>
-                    Conocemos la distancia entre las cargas (la hipotenusa del triángulo formado, \\( r = 3,5 \\text{ m} \\)) y la altura vertical respecto al eje X (\\( y = 1,5 \\text{ m} \\)).<br>
-                    Calculamos la distancia en el eje X (cateto contiguo) usando el Teorema de Pitágoras:<br>
-                    \\[ x = \\sqrt{r^2 - y^2} = \\sqrt{3,5^2 - 1,5^2} = \\sqrt{12,25 - 2,25} = \\sqrt{10} \\approx 3,16 \\text{ m} \\]
-                    Con esto, extraemos el coseno del ángulo \\(\\alpha\\) (ángulo entre la fuerza y el eje X), que usaremos para proyectar los vectores:<br>
-                    \\[ \\cos(\\alpha) = \\frac{\\text{cateto contiguo}}{\\text{hipotenusa}} = \\frac{\\sqrt{10}}{3,5} \\approx 0,9035 \\]
-                </div>
-            `
-        }
+/*     {
+
+    }     */
     ]
 };
