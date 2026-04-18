@@ -168,6 +168,137 @@ const baseDatosProblemas = {
         } */
     ],
     "fuerzas_vivas": [
+        {
+            titulo: "Problema 1: Frenado y Peso del Coche",
+            enunciado: "Un coche marcha a una velocidad de 25 m/s. Se accionan los frenos y reduce su velocidad a 15 m/s en un tiempo de 4 segundos. Si la fuerza empleada por los frenos es de 500 N, calcular el peso del coche.",
+            solucion: `
+                <div class='paso'>
+                    <strong>1. Cálculo de la aceleración (frenado):</strong><br>
+                    Utilizamos la fórmula de la cinemática: \\(a = \\frac{v_f - v_0}{t}\\)<br>
+                    \\[a = \\frac{15 - 25}{4} = -2,5 \\text{ m/s}^2\\]
+                    El signo negativo indica que es una deceleración. Para el cálculo de la masa usaremos el módulo: \\(2,5 \\text{ m/s}^2\\).
+                </div>
+                <div class='paso'>
+                    <strong>2. Cálculo de la masa (Segunda Ley de Newton):</strong><br>
+                    \\[m = \\frac{F}{a} = \\frac{500}{2,5} = 200 \\text{ kg}\\]
+                </div>
+                <div class='paso'>
+                    <strong>3. Cálculo del peso:</strong><br>
+                    Usando \\(g = 9,8 \\text{ m/s}^2\\):<br>
+                    \\[P = m \\cdot g = 200 \\cdot 9,8 = 1960 \\text{ N}\\]
+                    <span class='resultado'>Resultado: &nbsp P = 1960 N</span>
+                </div>
+            `
+        },
+        {
+            titulo: "Problema 2: Frenado por Rozamiento",
+            enunciado: "Un objeto de 4 kg de masa entra en una superficie horizontal con una velocidad inicial de 9 m/s. Si la fuerza de rozamiento entre las superficies es 10 N, calcular el espacio que recorre antes de pararse.",
+            solucion: `
+                <div class='paso'>
+                    <strong>1. Cálculo de la aceleración de frenado:</strong><br>
+                    La única fuerza horizontal es el rozamiento (en sentido contrario):<br>
+                    \\[a = \\frac{-F_r}{m} = \\frac{-10}{4} = -2,5 \\text{ m/s}^2\\]
+                </div>
+                <div class='paso'>
+                    <strong>2. Cálculo de la distancia (espacio):</strong><br>
+                    Usamos la ecuación de la velocidad independiente del tiempo: \\(\\\ v_f^2 = v_0^2 + 2 \\cdot a \\cdot x\\). Como se para, \\(v_f = 0\\):<br>
+                    \\[0 = 9^2 + 2 \\cdot (-2,5) \\cdot x\\]
+                    \\[0 = 81 - 5 \\cdot x \\implies x = \\frac{81}{5} = 16,2 \\text{ m}\\]
+                    <span class='resultado'>Resultado: &nbsp x = 16,2 m</span>
+                </div>
+            `
+        },
+        {
+            titulo: "Problema 3: Trabajo y Energía con Rozamiento",
+            enunciado: "Al lanzar un objeto de 0,5 kg de masa en un plano horizontal con rozamiento de 3,25 N, éste recorre una distancia de 4 metros antes de pararse. Calcular:<br> a) el trabajo realizado por la fuerza de rozamiento; <br> b) la energía cinética inicial del objeto. <br> c) la velocidad inicial del objeto.",
+            solucion: `
+                <div class='paso'>
+                    <strong>a) Trabajo de rozamiento:</strong><br>
+                    El rozamiento se opone al movimiento (\\(180^\\circ\\)):<br>
+                    \\[W_r = F_r \\cdot s \\cdot \\cos(180^\\circ) = 3,25 \\cdot 4 \\cdot (-1) = -13 \\text{ J}\\]
+                    <span class='resultado'>Resultados: &nbsp - 13 J</span>
+                </div>
+                <div class='paso'>
+                    <strong>b) Energía cinética inicial:</strong><br>
+                    Por el teorema del trabajo y la energía: \\(W_{ext} = \\Delta E_c = E_{cf} - E_{c0}\\). Como se para, \\(E_{cf} = 0\\):<br>
+                    \\[-13 = 0 - E_{c0} \\implies E_{c0} = 13 \\text{ J}\\]
+                    <span class='resultado'>Resultados: &nbsp 13 J </span>
+                </div>
+                <div class='paso'>
+                    <strong>c) Velocidad inicial:</strong><br>
+                    \\[E_{c0} = \\frac{1}{2} m v_0^2 \\implies 13 = \\frac{1}{2} \\cdot 0,5 \\cdot v_0^2\\]
+                    \\[v_0 = \\sqrt{\\frac{13}{0,25}} = \\sqrt{52} \\approx 7,21 \\text{ m/s}\\]
+                    <span class='resultado'>Resultados: &nbsp 7,21 m/s</span>
+                </div>
+            `
+        },
+        {
+            titulo: "Problema 4: Energía y Aceleración",
+            enunciado: "Un bloque de masa 1,2 toneladas es acelerado por una fuerza exterior de 10 a 20 m/s. ¿Cuánta energía ha recibido?. ¿De quién?.",
+            solucion: `
+                <div class='paso'>
+                    <strong>1. Cálculo de la energía recibida (\\(\\Delta E_c\\)):</strong><br>
+                    Masa: \\(m = 1200 \\text{ kg}\\).<br>
+                    \\[\\Delta E_c = \\frac{1}{2} m (v_f^2 - v_0^2) = \\frac{1}{2} \\cdot 1200 \\cdot (20^2 - 10^2)\\]
+                    \\[\\Delta E_c = 600 \\cdot (400 - 100) = 600 \\cdot 300 = 180000 \\text{ J}\\]
+                </div>
+                <div class='paso'>
+                    <strong>2. Origen de la energía:</strong><br>
+                    La energía ha sido recibida de la <strong>fuerza exterior</strong> que realiza el trabajo sobre el bloque. <br>
+                    <span class='resultado'>Resultado: &nbsp 180000 J (180 kJ)</span>
+                </div>
+            `
+        },
+        {
+            titulo: "Problema 5: Disipación de Energía",
+            enunciado: "Un coche posee una energía cinética de \\(7,2 \\cdot 10^4 \\text{ J}\\), el viento lo frena y su energía disminuye hasta \\(3,2 \\cdot 10^4 \\text{ J}\\) tras recorrer 40 m. Calcula: <br> a) ¿En qué se ha invertido la energía? <br> b) El trabajo realizado por el viento. <br> c) La fuerza ejercida por el viento.",solucion: `
+                <div class='paso'>
+                    <strong>a) Transformación de la energía:</strong><br>
+                    La energía cinética que el coche ha perdido se ha invertido en realizar un <strong>trabajo mecánico contra la resistencia del aire</strong>. Esta energía se disipa finalmente en forma de <strong>calor</strong> (energía térmica) debido al rozamiento de las moléculas de aire contra la carrocería del vehículo.
+                </div>
+                <div class='paso'>
+                    <strong>b) Cálculo del trabajo realizado por el viento (W):</strong><br>
+                    Según el teorema de las fuerzas vivas, el trabajo neto es igual a la variación de la energía cinética:<br>
+                    \\[W = \\Delta E_c = E_{cf} - E_{c0}\\]
+                    \\[W = 3,2 \\cdot 10^4 - 7,2 \\cdot 10^4 = - 4,0 \\cdot 10^4 \\text{ J}\\]
+                    El signo negativo indica que el trabajo es resistente (se opone al movimiento). <br>
+                    <span class='resultado'>Resultados: &nbsp W = - 40000 J</span>
+                </div>
+                <div class='paso'>
+                    <strong>c) Cálculo de la fuerza del viento (F):</strong><br>
+                    Sabiendo que el trabajo es \\(W = F \\cdot x \\cdot \\cos(\\alpha)\\) y que el viento actúa en sentido contrario al movimiento (\\(\\alpha = 180^\\circ\\)):<br>
+                    \\[-40000 = F \\cdot 40 \\cdot (-1)\\]
+                    \\[F = \\frac{- 40000}{-40} = 1000 \\text{ N}\\]
+                    <span class='resultado'>Resultados: &nbsp F = 1000 N</span>
+                </div>
+            `
+        },
+        {
+            titulo: "Problema 6: Coeficiente de Rozamiento en Plano Inclinado",
+            enunciado: "Un cuerpo comienza a deslizar por un plano inclinado con rozamiento. La energía inicial es 20 kJ y cuando llega al final su energía es 15 kJ. Si el plano tiene una inclinación de 30°, ¿cuál es el coeficiente de rozamiento?",
+            solucion: `
+                <div class='paso'>
+                    <strong>1. Trabajo de rozamiento (\\(W_r\\)):</strong><br>
+                    La pérdida de energía es el trabajo realizado por el rozamiento:<br>
+                    \\[W_r = E_f - E_i = 15000 - 20000 = - 5000 \\text{ J}\\]
+                </div>
+                <div class='paso'>
+                    <strong>2. Relación con la altura y distancia:</strong><br>
+                    La energía inicial es potencial: \\(E_i = m \\cdot g \\cdot h = 20000 \\text{ J}\\).<br>
+                    En un plano de \\(30^\\circ\\), la altura \\(h\\) y la distancia recorrida \\(d\\) se relacionan: \\(h = d \\cdot \\sin(30^\\circ) = 0,5 \\cdot d\\).<br>
+                    Sustituyendo: \\(m \\cdot g \\cdot (0,5 \\cdot d) = 20000 \\implies m \\cdot g \\cdot d = 40000\\).
+                </div>
+                <div class='paso'>
+                    <strong>3. Cálculo del coeficiente (\\(\\mu\\)):</strong><br>
+                    El trabajo de rozamiento es \\(W_r = -F_r \\cdot d = -(\\mu \\cdot m \\cdot g \\cdot \\cos(30^\\circ)) \\cdot d\\).<br>
+                    \\[-5000 = -\\mu \\cdot (m \\cdot g \\cdot d) \\cdot \\cos(30^\\circ)\\]
+                    \\[5000 = \\mu \\cdot 40000 \\cdot 0,866\\]
+                    \\[\\mu = \\frac{5000}{34640} \\approx 0,144\\]
+                    <span class='resultado'>Resultado: &nbsp \\( \\mu \\approx 0,14 \\)</span>
+                </div>
+            `
+        }
+
 /*         {
             titulo: "Problema 1: Tobogan acuático",
             enunciado: "Un deportista insensato se deja caer por un tobogán acuático. El tobogán tiene una longitud de 20 metros y presenta una inclinación de 45º. El deportista insensato tiene una masa de 75 kg. Dada la presencia de agua, el rozamiento se puede considerar despreciable. Determina: <br> a) La velocidad con la que llega al punto inferior del tobogán. <br> b) El trabajo desarrollado por la fuerza gravitatoria.",
@@ -233,7 +364,8 @@ const baseDatosProblemas = {
                 </div>
             `
         }
- */    ],
+ */    
+],
     "elastica": [
 /*         {
             titulo: "Problema 1: Persecución de Toad",
