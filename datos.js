@@ -1,7 +1,7 @@
 const baseDatosProblemas = {
     "conceptos": [
         {
-            titulo: "Problema 1: Dinámica y Trabajo en superficie horizontal",
+            titulo: "Problema 1: Dinámica y trabajo en superficie horizontal",
             enunciado: "Un cuerpo se encuentra en reposo sobre una superficie horizontal. En un determinado instante, actúa sobre él una fuerza de 60 N durante un tiempo de 5 s, que le comunica una aceleración de 2 \\(\\ce{m/s^2}\\). Calcular: <br> a) La masa y el peso del cuerpo. <br> b) Velocidad, espacio recorrido, y energía cinética al cabo de los 5 s. <br> c) Trabajo realizado y potencia desarrollada por la fuerza.",
             solucion: `
                 <div class='paso'>
@@ -29,7 +29,7 @@ const baseDatosProblemas = {
              `
         }, 
         {
-            titulo: "Problema 2: Trabajo Mecánico en el Desplazamiento de un Cuerpo",
+            titulo: "Problema 2: Trabajo mecánico en el desplazamiento de un cuerpo",
             enunciado: "Se tiene que trasladar un cuerpo que pesa 50 N a una distancia de 20 m. ¿Qué trabajo se realiza en los siguientes casos? <br> a) Empujando el cuerpo con una fuerza de 3 N sin conseguir moverlo. <br> b) Empujando el cuerpo con una fuerza de 5 N en la misma dirección del desplazamiento, consiguiéndolo.",
             solucion: `
                 <div class='paso'>
@@ -149,7 +149,7 @@ const baseDatosProblemas = {
     ],
     "fuerzas_vivas": [
         {
-            titulo: "Problema 1: Frenado y Peso del Coche",
+            titulo: "Problema 1: Frenado y peso del coche",
             enunciado: "Un coche marcha a una velocidad de 25 m/s. Se accionan los frenos y reduce su velocidad a 15 m/s en un tiempo de 4 segundos. Si la fuerza empleada por los frenos es de 500 N, calcular el peso del coche.",
             solucion: `
                 <div class='paso'>
@@ -171,7 +171,7 @@ const baseDatosProblemas = {
             `
         },
         {
-            titulo: "Problema 2: Frenado por Rozamiento",
+            titulo: "Problema 2: Frenado por rozamiento",
             enunciado: "Un objeto de 4 kg de masa entra en una superficie horizontal con una velocidad inicial de 9 m/s. Si la fuerza de rozamiento entre las superficies es 10 N, calcular el espacio que recorre antes de pararse.",
             solucion: `
                 <div class='paso'>
@@ -189,7 +189,7 @@ const baseDatosProblemas = {
             `
         },
         {
-            titulo: "Problema 3: Trabajo y Energía con Rozamiento",
+            titulo: "Problema 3: Trabajo y energía con rozamiento",
             enunciado: "Al lanzar un objeto de 0,5 kg de masa en un plano horizontal con rozamiento de 3,25 N, éste recorre una distancia de 4 metros antes de pararse. Calcular:<br> a) el trabajo realizado por la fuerza de rozamiento; <br> b) la energía cinética inicial del objeto. <br> c) la velocidad inicial del objeto.",
             solucion: `
                 <div class='paso'>
@@ -213,7 +213,7 @@ const baseDatosProblemas = {
             `
         },
         {
-            titulo: "Problema 4: Energía y Aceleración",
+            titulo: "Problema 4: Energía y aceleración",
             enunciado: "Un bloque de masa 1,2 toneladas es acelerado por una fuerza exterior de 10 a 20 m/s. ¿Cuánta energía ha recibido?. ¿De quién?.",
             solucion: `
                 <div class='paso'>
@@ -230,7 +230,7 @@ const baseDatosProblemas = {
             `
         },
         {
-            titulo: "Problema 5: Disipación de Energía",
+            titulo: "Problema 5: Disipación de energía",
             enunciado: "Un coche posee una energía cinética de \\(7,2 \\cdot 10^4 \\text{ J}\\), el viento lo frena y su energía disminuye hasta \\(3,2 \\cdot 10^4 \\text{ J}\\) tras recorrer 40 m. Calcula: <br> a) ¿En qué se ha invertido la energía? <br> b) El trabajo realizado por el viento. <br> c) La fuerza ejercida por el viento.",solucion: `
                 <div class='paso'>
                     <strong>a) Transformación de la energía:</strong><br>
@@ -254,7 +254,7 @@ const baseDatosProblemas = {
             `
         },
         {
-            titulo: "Problema 6: Coeficiente de Rozamiento en Plano Inclinado",
+            titulo: "Problema 6: Coeficiente de rozamiento en plano inclinado",
             enunciado: "Un cuerpo comienza a deslizar por un plano inclinado con rozamiento. La energía inicial es 20 kJ y cuando llega al final su energía es 15 kJ. Si el plano tiene una inclinación de 30°, ¿cuál es el coeficiente de rozamiento?",
             solucion: `
                 <div class='paso'>
@@ -281,7 +281,7 @@ const baseDatosProblemas = {
     ],
     "elastica": [
     {
-        titulo: "Problema 1: Energía Elástica y Rozamiento",
+        titulo: "Problema 1: Energía elástica y rozamiento",
         enunciado: "Un resorte de constante K = 4000 N/m se comprime una distancia de 0,4 m. Se apoya en él un objeto de 6 kg de masa. Se suelta el muelle y el objeto es lanzado en una superficie horizontal en la que la fuerza de rozamiento vale 27 N. Calcular: <br> a) la velocidad con que sale lanzado el objeto. <br> b) la distancia que recorre el objeto antes de pararse.",
         solucion: `
             <div class='paso'>
@@ -302,7 +302,7 @@ const baseDatosProblemas = {
         `
     },
     {
-        titulo: "Problema 2: Conservación de la Energía y Choques",
+        titulo: "Problema 2: Conservación de la energía y choques",
         enunciado: "En el sistema de la figura se tiene que \\(m_1 = 1 \\text{ kg}, h = 1 \\text{ m}, m_2 = 0,5 \\text{ kg}, K = 200 \\text{ N/m}\\), y el rozamiento es nulo. Al dejar suelta \\(m_1\\), cae y comprime el muelle. Calculad: <br> a) La velocidad de \\(m_1\\) al chocar con la otra masa y la máxima deformación del muelle. <br> b) Tras el choque, \\(m_1\\) y \\(m_2\\) salen despedidas juntas. Calculad con qué velocidad empezarán a subir, y hasta qué altura lo harán. <br> <br> <div style='text-align: center; margin-bottom: 20px;'> <img src='img/felas_2.png' style='max-width: 50%;height: auto; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);'> </div> ",
         solucion: `
             <div class='paso'>
