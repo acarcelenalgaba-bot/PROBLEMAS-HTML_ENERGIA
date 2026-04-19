@@ -145,27 +145,7 @@ const baseDatosProblemas = {
                     <span class='resultado'>Resultado: &nbsp \\(h \\approx 1181,22 \\text{ m}\\)</span>
                 </div>
             `
-        }      
-        /* {
-            titulo: "Problema 1: El coche descapotable",
-            enunciado: "Un coche descapotable de masa 500 kg acelera de 0 a 100 km/h en un tiempo de 20 segundos. Determina: <br> a) El trabajo realizado por el motor suponiendo un rozamiento nulo (compruébalo por energía y por cinemática). <br> b) La potencia desarrollada por el motor.",
-            solucion: `
-                <div class='paso'>
-                    <strong>a) El coche:</strong><br>
-                </div>
-            `
-        },
-        {
-            titulo: "Problema 2: Ejercicio físico",
-            enunciado: "Un ejercicio físico para trabajar el abdomen consiste en lanzar un balón pesado hacia arriba. El profesional, que está muy fuerte, es capaz de lanzar el balón, de masa 10 kg, 2 metros hacia arriba. Determina: <br> a) La velocidad inicial con la que lanza el balón nuestro profesional. <br> b) El trabajo realizado por el profesional.",
-            solucion: `
-                <div class='paso'>
-                    <strong>Paso previo: ¡Cuidado con las unidades!</strong><br>
-                    Antes de sustituir a lo loco, debemos asegurarnos de que todo está en el Sistema Internacional. Las masas ya están en kilogramos, pero la distancia nos la dan en kilómetros. ¡Trampa clásica!<br>
-                    \\( d = 384.000 \\text{ km} = 384.000.000 \\text{ m} = 3,84 \\cdot 10^8 \\text{ m} \\)
-                </div>
-            `
-        } */
+        }
     ],
     "fuerzas_vivas": [
         {
@@ -215,7 +195,7 @@ const baseDatosProblemas = {
                 <div class='paso'>
                     <strong>a) Trabajo de rozamiento:</strong><br>
                     El rozamiento se opone al movimiento (\\(180^\\circ\\)):<br>
-                    \\[W_r = F_r \\cdot s \\cdot \\cos(180^\\circ) = 3,25 \\cdot 4 \\cdot (-1) = -13 \\text{ J}\\]
+                    \\[W_r = F_r \\cdot x \\cdot \\cos(180^\\circ) = 3,25 \\cdot 4 \\cdot (-1) = -13 \\text{ J}\\]
                     <span class='resultado'>Resultados: &nbsp - 13 J</span>
                 </div>
                 <div class='paso'>
@@ -239,7 +219,7 @@ const baseDatosProblemas = {
                 <div class='paso'>
                     <strong>1. Cálculo de la energía recibida (\\(\\Delta E_c\\)):</strong><br>
                     Masa: \\(m = 1200 \\text{ kg}\\).<br>
-                    \\[\\Delta E_c = \\frac{1}{2} m (v_f^2 - v_0^2) = \\frac{1}{2} \\cdot 1200 \\cdot (20^2 - 10^2)\\]
+                    \\[\\Delta E_c = \\frac{1}{2} \\cdot m \\cdot (v_f^2 - v_0^2) = \\frac{1}{2} \\cdot 1200 \\cdot (20^2 - 10^2)\\]
                     \\[\\Delta E_c = 600 \\cdot (400 - 100) = 600 \\cdot 300 = 180000 \\text{ J}\\]
                 </div>
                 <div class='paso'>
@@ -298,157 +278,60 @@ const baseDatosProblemas = {
                 </div>
             `
         }
-
-/*         {
-            titulo: "Problema 1: Tobogan acuático",
-            enunciado: "Un deportista insensato se deja caer por un tobogán acuático. El tobogán tiene una longitud de 20 metros y presenta una inclinación de 45º. El deportista insensato tiene una masa de 75 kg. Dada la presencia de agua, el rozamiento se puede considerar despreciable. Determina: <br> a) La velocidad con la que llega al punto inferior del tobogán. <br> b) El trabajo desarrollado por la fuerza gravitatoria.",
-            solucion: `
-                <div class='paso'>
-                    <strong>a) Tensión de la cuerda:</strong><br>
-                    En un movimiento circular en el plano horizontal, el cable es el único elemento que tira del martillo hacia el centro. Por tanto, la tensión (\\(T\\)) actúa íntegramente como fuerza centrípeta (\\(T = F_c\\)):
-                    \\[ T = m \\cdot \\frac{v^2}{r} = 7,26 \\cdot \\frac{30^2}{1,22} = 7,26 \\cdot \\frac{900}{1,22} \\]
-                    <span class='resultado'>Resultado:  &nbsp \\( T = 5355,74 \\) N</span>
-                </div>
-            `
-        },
-        {
-            titulo: "Problema 2: Antiguo Egipto",
-            enunciado: "Un esclavo en el Antiguo Egipto está probando la rampa que acaba de instalar. Para ello lanza su escarabeo, un amuleto de 30 g símbolo de la resurrección, sobre la rampa a una velocidad de 5 m/s. Este plano está inclinado 45º y tiene un coeficiente de rozamiento de µ=0,1. Determina: <br> a) La altura máxima alcanzada. <br> b) La velocidad con la que vuelve a su posición inicial.",
-            solucion: `
-                <div class='paso'>
-                    <strong>Paso previo: Unidades y fuerzas base:</strong><br>
-                    Primero pasamos todos los datos al S.I.: masa \\( m = 0,3 \\) kg, radio o brazo \\( R = 0,7 \\) m. <br>
-                    Convertimos la velocidad angular a radianes por segundo: \\( \\omega = 120 \\text{ rpm} \\cdot \\frac{2\\pi \\text{ rad}}{1 \\text{ rev}} \\cdot \\frac{1 \\text{ min}}{60 \\text{ s}} = 4\\pi \\approx 12,57 \\text{ rad/s} \\).<br>
-                    Calculamos la velocidad tangencial: \\( v = \\omega \\cdot R = 12,57 \\cdot 0,7 \\approx 8,80 \\) m/s.<br>
-                    Con esto, precalculamos las dos fuerzas clave del sistema:<br>
-                    - El Peso: \\( P = m \\cdot g = 0,3 \\cdot 9,8 = 2,94 \\) N.<br>
-                    - La Fuerza centrípeta necesaria: \\( F_c = m \\cdot \\frac{v^2}{R} = 0,3 \\cdot \\frac{8,80^2}{0,7} \\approx 33,19 \\) N.
-                </div>
-            `
-        },
-        {
-            titulo: "Problema 3: Pelota de pinball",
-            enunciado: "Una pelota en un pinball es lanzada inicialmente por un muelle comprimido 2 cm. La constante del muelle es k = 3200 N/m. La pelota tiene una masa de 80 g. Sabiendo que el pinball tiene una inclinación de 15◦ y que el coeficiente de rozamiento entre la pelota y la superficie del pinball es 0,05, determina: <br> </>a) La velocidad con la que sale la pelota del muelle. <br> b) La altura que alcanza la pelota. <br> <br> <div style='text-align: center; margin-bottom: 20px;'> <img src='img/cons_3.png' style='max-width: 30%;height: auto; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);'> </div> <br>",
-            solucion: `
-                <div class='paso'>
-                    <strong>Paso previo: Sistema Internacional:</strong><br>
-                    Convertimos la velocidad a metros por segundo para poder trabajar correctamente con las fuerzas:<br>
-                    \\[ v = 90 \\text{ km/h} \\cdot \\frac{1000 \\text{ m}}{1 \\text{ km}} \\cdot \\frac{1 \\text{ h}}{3600 \\text{ s}} = 25 \\text{ m/s} \\]
-                </div>
-            `
-        },        
-        {
-            titulo: "Problema 4: Montaña rusa",
-            enunciado: "Un grupo de ingenieros está diseñando una montaña rusa para un parque de atracciones. Para ahorrar energía, los ingenieros quieren que los vagones suban el último tramo sin consumo eléctrico. El último tramo tiene una longitud de 10 metros y una inclinación de 60◦ sobre la horizontal. El rozamiento entre los raíles y los vagones es de μ = 0,1. Determina la velocidad con la que deben entrar los vagones en el plano inclinado para que estos lleguen a la parte superior con velocidad nula.",
-            solucion: `
-                <div class='paso'>
-                    <strong>Análisis de fuerzas en un peralte sin rozamiento:</strong><br>
-                    La componente vertical de la Fuerza Normal (\\( N_y \\)) contrarresta el peso (\\( P \\)), mientras que la componente horizontal (\\( N_x \\)) actúa como fuerza centrípeta (\\( F_c \\)).<br>
-                    - Eje vertical: \\( N \\cdot \\cos(\\alpha) = m \\cdot g \\)<br>
-                    - Eje horizontal: \\( N \\cdot \\sin(\\alpha) = m \\cdot \\frac{v^2}{R} \\)
-                </div>
-                
-            `
-        },
-        {
-            titulo: "Problema 5: Chica en el trineo",
-            enunciado: "Una chica se deja caer con su trineo por una ladera nevada inclinada 30◦ sobre la horizontal. Cuando recorre 30 metros entra en un lago helado y desliza por su superficie hasta que choca con un muelle que amortigua su impacto. La masa de la chica es de 70 kg y la del trineo 10 kg. El coeficiente de rozamiento con la nieve es μ = 0,2 y prácticamente nulo con la superficie del lado helado. Determina: <br> a) La energía perdida por rozamiento. <br> b) La velocidad con la que llega a la superficie del lago. <br> c) La compresión del muelle, sabiendo que su constante elástica es k = 10 kN/m. <br> <br> <div style='text-align: center; margin-bottom: 20px;'> <img src='img/cons_5.png' style='max-width: 40%;height: auto; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);'> </div> <br>",
-            solucion: `
-                <div class='paso'>
-                    <strong>a) Análisis de fuerzas y ecuaciones:</strong><br>
-                    Las fuerzas que actúan sobre el coche son el peso \\(P = m \\cdot g\\), la fuerza normal \\(N\\) perpendicular al peralte, y la fuerza de rozamiento \\(f_r\\).<br>
-                    Para calcular la velocidad máxima, asumimos que el vehículo está al límite de deslizar hacia el exterior de la curva, por lo que la fuerza de rozamiento apunta hacia el interior (hacia abajo del plano inclinado).<br>
-                    Descomponemos las fuerzas en los ejes Y (vertical) y X (horizontal, apuntando hacia el centro de la curva):<br>
-                    - <strong>Eje Y (Equilibrio vertical):</strong> \\(N\\cos\\theta - f_r\\sin\\theta - m \\cdot g = 0\\). Como el rozamiento es máximo, \\(f_r = \\mu \\cdot N\\), quedando \\(N(\\cos\\theta - \\mu\\sin\\theta) = m \\cdot g\\).<br>
-                    - <strong>Eje X (Fuerza centrípeta):</strong> \\(N\\sin\\theta + f_r\\cos\\theta = m \\cdot \\frac{v^2}{R}\\). Sustituyendo el rozamiento, queda \\(N(\\sin\\theta + \\mu\\cos\\theta) = m \\cdot \\frac{v^2}{R}\\).
-                </div>
-            `
-        }
- */    
-],
+    ],
     "elastica": [
-/*         {
-            titulo: "Problema 1: Persecución de Toad",
-            enunciado: "El pobre Toad está siendo perseguido por un caparazón azul. Para evitarlo pisa el acelerador y pasa de una velocidad de 30 m/s a 60 m/s. En este proceso de aceleración recorre una distancia de 2000 m. El coeficiente de rozamiento del neumático con el suelo es de μ = 0,3. Sabiendo que Toad tiene una masa de 15 kg y su vehículo una masa de 135 kg, determina: <br> </>a) El trabajo realizado por la fuerza de rozamiento. <br> b) El trabajo realizado por el motor.",
-            solucion: `
-                <div class='paso'>
-                    <strong>Paso previo: Unidades al Sistema Internacional y análisis:</strong><br>
-                    El núcleo del deuterio tiene un protón y un neutrón. Como el neutrón no tiene carga, la interacción eléctrica se produce exclusivamente entre el protón y el electrón.<br>
-                    Antes de operar, debemos pasar la distancia (dada en Angstroms, Å) a metros:<br>
-                    \\[ r = 0,5 \\text{ Å } \\cdot \\frac{10^{-10} \\text{ m}}{1 \\text{ Å }} = 0,5 \\cdot 10^{-10} \\text{ m} = 5 \\cdot 10^{-11} \\text{ m} \\]
-                </div>
-            `
-        },
-        {
-            titulo: "Problema 2: Accidente con choque",
-            enunciado: "Un criminólogo está investigando la secuencia de un accidente donde chocaron 2 vehículos. Tras la colisión, ambos vehículos quedaron unidos y recorrieron 3 metros sobre el asfalto horizontal hasta salir de la carretera, y otros 2 metros por un terraplén de tierra inclinado 15◦ . La masa de ambos vehículos en conjunto es de 1500 kg. El coeficiente de rozamiento con el asfalto es de μ = 0,5, mientras que con la tierra existe un coeficiente de rozamiento de μ = 0,4. Determina: <br> a) Un esquema del recorrido de los vehículos tras la colisión. <br> b) La velocidad inicial de ambos vehículos tras el choque.",
-            solucion: `
-                <div class='paso'>
-                    <strong>Paso previo: Unidades al Sistema Internacional:</strong><br>
-                    Antes de empezar, pasamos todos los datos al S.I. para evitar errores con la constante de Coulomb (\\(k\\)):<br>
-                    - Cargas: \\( q = 5 \\text{ nC} = 5 \\cdot 10^{-9} \\text{ C} \\)<br>
-                    - Distancia: \\( L = 60 \\text{ cm} = 0,6 \\text{ m} \\)<br>
-                    - Masa: \\( m = 5 \\text{ g} = 5 \\cdot 10^{-3} \\text{ kg} \\)
-                </div>
-            `
-        },
-        {
-            titulo: "Problema 3: Disco de hockey",
-            enunciado: "Se lanza un disco de hockey con una masa de 160 gramos propulsado por un muelle comprimido 5 cm. El disco recorre 100 metros en un lago helado horizontal y sube una colina de nieve de inclinación 15◦ , quedándose a una altura de 2 metros. El coeficiente de rozamiento con el hielo es 0,05 y sobre la nieve 0,2. Determina: <br> a) La constante del muelle. <br> b) El trabajo realizado por la fuerza de rozamiento. <br> <br> <div style='text-align: center; margin-bottom: 20px;'> <img src='img/te_tra_3.png' style='max-width: 50%;height: auto; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);'> </div> <br>",
-            solucion: `
-                <div class='paso'>
-                    <strong>Paso 1: Análisis geométrico previo:</strong><br>
-                    Observando el esquema, tenemos un sistema simétrico. La carga positiva \\(q_1\\) es atraída por las cargas negativas \\(q_2\\) y \\(q_3\\).<br>
-                    Conocemos la distancia entre las cargas (la hipotenusa del triángulo formado, \\( r = 3,5 \\text{ m} \\)) y la altura vertical respecto al eje X (\\( y = 1,5 \\text{ m} \\)).<br>
-                    Calculamos la distancia en el eje X (cateto contiguo) usando el Teorema de Pitágoras:<br>
-                    \\[ x = \\sqrt{r^2 - y^2} = \\sqrt{3,5^2 - 1,5^2} = \\sqrt{12,25 - 2,25} = \\sqrt{10} \\approx 3,16 \\text{ m} \\]
-                    Con esto, extraemos el coseno del ángulo \\(\\alpha\\) (ángulo entre la fuerza y el eje X), que usaremos para proyectar los vectores:<br>
-                    \\[ \\cos(\\alpha) = \\frac{\\text{cateto contiguo}}{\\text{hipotenusa}} = \\frac{\\sqrt{10}}{3,5} \\approx 0,9035 \\]
-                </div>
-            `
-        }
- */    ],
+    {
+        titulo: "Problema 1: Energía Elástica y Rozamiento",
+        enunciado: "Un resorte de constante K = 4000 N/m se comprime una distancia de 0,4 m. Se apoya en él un objeto de 6 kg de masa. Se suelta el muelle y el objeto es lanzado en una superficie horizontal en la que la fuerza de rozamiento vale 27 N. Calcular: <br> a) la velocidad con que sale lanzado el objeto. <br> b) la distancia que recorre el objeto antes de pararse.",
+        solucion: `
+            <div class='paso'>
+                <strong>a) Cálculo de la velocidad de lanzamiento:</strong><br>
+                La energía potencial elástica almacenada en el muelle se transforma íntegramente en energía cinética (suponiendo que el muelle se suelta en el punto de equilibrio):<br>
+                \\[E_{pe} = \\frac{1}{2} \\cdot K \\cdot x^2 = \\frac{1}{2} \\cdot 4000 \\cdot (0,4)^2 = 320 \\text{ J}\\]
+                Igualamos a la energía cinética (\\(E_c = \\frac{1}{2} \\cdot m \\cdot v^2\\)) para despejar la velocidad:<br>
+                \\[320 = \\frac{1}{2} \\cdot 6 \\cdot v^2 \\implies v^2 = \\frac{320}{3} \\implies v = \\sqrt{106,67} \\approx 10,33 \\text{ m/s}\\]
+                <span class='resultado'>Resultado: &nbsp \\(v \\approx 10,3 \\text{ m/s}\\)</span>
+            </div>
+            <div class='paso'>
+                <strong>b) Distancia hasta detenerse:</strong><br>
+                El trabajo de la fuerza de rozamiento debe consumir toda la energía cinética del objeto hasta pararlo (\\(W_r = \\Delta E_c\\)):<br>
+                \\[W_r = F_r \\cdot x \\implies 320 = 27 \\cdot x\\]
+                \\[x = \\frac{320}{27} \\approx 11,85 \\text{ m}\\]
+                <span class='resultado'>Resultado: &nbsp \\(x = 11,85 \\text{ m}\\)</span>
+            </div>
+        `
+    },
+    {
+        titulo: "Problema 2: Conservación de la Energía y Choques",
+        enunciado: "En el sistema de la figura se tiene que \\(m_1 = 1 \\text{ kg}, h = 1 \\text{ m}, m_2 = 0,5 \\text{ kg}, K = 200 \\text{ N/m}\\), y el rozamiento es nulo. Al dejar suelta \\(m_1\\), cae y comprime el muelle. Calculad: <br> a) La velocidad de \\(m_1\\) al chocar con la otra masa y la máxima deformación del muelle. <br> b) Tras el choque, \\(m_1\\) y \\(m_2\\) salen despedidas juntas. Calculad con qué velocidad empezarán a subir, y hasta qué altura lo harán. <br> <br> <div style='text-align: center; margin-bottom: 20px;'> <img src='img/felas_2.png' style='max-width: 50%;height: auto; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);'> </div> ",
+        solucion: `
+            <div class='paso'>
+                <strong>a) Velocidad de choque y deformación:</strong><br>
+                La velocidad de \\(m_1\\) antes del choque se obtiene por conservación de energía mecánica:<br>
+                \\[m_1 \\cdot g \\cdot h = \\frac{1}{2} \\cdot m_1 \\cdot v^2 \\implies v = \\sqrt{2 \\cdot g \\cdot h} = \\sqrt{2 \\cdot 9,8 \\cdot 1} \\approx 4,43 \\text{ m/s}\\]
+                Para la deformación máxima, asumimos que tras el choque (que suele considerarse inelástico para que compriman juntos) la energía cinética del sistema se convierte en elástica. <br>
+                Primero hallamos la velocidad del conjunto (\\(v'\\)) por conservación del momento lineal:<br>
+                \\[m_1 \\cdot v = (m_1 + m_2) \\cdot v' \\implies 1 \\cdot 4,43 = 1,5 \\cdot v' \\implies v' \\approx 2,95 \\text{ m/s}\\]
+                Energía cinética del conjunto = Energía elástica máxima:<br>
+                \\[\\frac{1}{2} \\cdot (m_1 + m_2) \\cdot (v')^2 = \\frac{1}{2} \\cdot K \\cdot x^2\\]
+                \\[\\frac{1}{2} \\cdot (1,5) \\cdot (2,95)^2 = \\frac{1}{2} \\cdot 200 \\cdot x^2 \\implies 6,52 = 100 x^2 \\implies x \\approx 0,255 \\text{ m}\\]
+                <span class='resultado'>Resultados: &nbsp \\( v = 4,43 \\text{ m/s}\\); &nbsp \\(x = 0,255 \\text{ m}\\)</span>
+            </div>
+            <div class='paso'>
+                <strong>b) Velocidad de ascenso y altura máxima:</strong><br>
+                Como el enunciado indica que tras la compresión salen despedidas juntas y el rozamiento es nulo, la velocidad inicial de subida es la misma que calculamos tras el choque: \\(v' = 2,95 \\text{ m/s}\\).<br>
+                Para la altura final (\\(h'\\)), aplicamos de nuevo conservación de energía:<br>
+                \\[\\frac{1}{2} \\cdot M \\cdot (v')^2 = M \\cdot g \\cdot h' \\implies h' = \\frac{(v')^2}{2 \\cdot g}\\]
+                \\[h' = \\frac{2,95^2}{2 \\cdot 9,8} = \\frac{8,70}{19,6} \\approx 0,44 \\text{ m}\\]
+                <span class='resultado'>Resultados: &nbsp \\(v' = 2,95 \\text{ m/s}\\); &nbsp \\(h' = 0,44 \\text{ m}\\)</span>
+            </div>
+        `
+        }    
+    ],
     "conservacion": [
-/*         {
-            titulo: "Problema 1: Persecución de Toad",
-            enunciado: "El pobre Toad está siendo perseguido por un caparazón azul. Para evitarlo pisa el acelerador y pasa de una velocidad de 30 m/s a 60 m/s. En este proceso de aceleración recorre una distancia de 2000 m. El coeficiente de rozamiento del neumático con el suelo es de μ = 0,3. Sabiendo que Toad tiene una masa de 15 kg y su vehículo una masa de 135 kg, determina: <br> </>a) El trabajo realizado por la fuerza de rozamiento. <br> b) El trabajo realizado por el motor.",
-            solucion: `
-                <div class='paso'>
-                    <strong>Paso previo: Unidades al Sistema Internacional y análisis:</strong><br>
-                    El núcleo del deuterio tiene un protón y un neutrón. Como el neutrón no tiene carga, la interacción eléctrica se produce exclusivamente entre el protón y el electrón.<br>
-                    Antes de operar, debemos pasar la distancia (dada en Angstroms, Å) a metros:<br>
-                    \\[ r = 0,5 \\text{ Å } \\cdot \\frac{10^{-10} \\text{ m}}{1 \\text{ Å }} = 0,5 \\cdot 10^{-10} \\text{ m} = 5 \\cdot 10^{-11} \\text{ m} \\]
-                </div>
-            `
-        },
-        {
-            titulo: "Problema 2: Accidente con choque",
-            enunciado: "Un criminólogo está investigando la secuencia de un accidente donde chocaron 2 vehículos. Tras la colisión, ambos vehículos quedaron unidos y recorrieron 3 metros sobre el asfalto horizontal hasta salir de la carretera, y otros 2 metros por un terraplén de tierra inclinado 15◦ . La masa de ambos vehículos en conjunto es de 1500 kg. El coeficiente de rozamiento con el asfalto es de μ = 0,5, mientras que con la tierra existe un coeficiente de rozamiento de μ = 0,4. Determina: <br> a) Un esquema del recorrido de los vehículos tras la colisión. <br> b) La velocidad inicial de ambos vehículos tras el choque.",
-            solucion: `
-                <div class='paso'>
-                    <strong>Paso previo: Unidades al Sistema Internacional:</strong><br>
-                    Antes de empezar, pasamos todos los datos al S.I. para evitar errores con la constante de Coulomb (\\(k\\)):<br>
-                    - Cargas: \\( q = 5 \\text{ nC} = 5 \\cdot 10^{-9} \\text{ C} \\)<br>
-                    - Distancia: \\( L = 60 \\text{ cm} = 0,6 \\text{ m} \\)<br>
-                    - Masa: \\( m = 5 \\text{ g} = 5 \\cdot 10^{-3} \\text{ kg} \\)
-                </div>
-            `
-        },
-        {
-            titulo: "Problema 3: Disco de hockey",
-            enunciado: "Se lanza un disco de hockey con una masa de 160 gramos propulsado por un muelle comprimido 5 cm. El disco recorre 100 metros en un lago helado horizontal y sube una colina de nieve de inclinación 15◦ , quedándose a una altura de 2 metros. El coeficiente de rozamiento con el hielo es 0,05 y sobre la nieve 0,2. Determina: <br> a) La constante del muelle. <br> b) El trabajo realizado por la fuerza de rozamiento. <br> <br> <div style='text-align: center; margin-bottom: 20px;'> <img src='img/te_tra_3.png' style='max-width: 50%;height: auto; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);'> </div> <br>",
-            solucion: `
-                <div class='paso'>
-                    <strong>Paso 1: Análisis geométrico previo:</strong><br>
-                    Observando el esquema, tenemos un sistema simétrico. La carga positiva \\(q_1\\) es atraída por las cargas negativas \\(q_2\\) y \\(q_3\\).<br>
-                    Conocemos la distancia entre las cargas (la hipotenusa del triángulo formado, \\( r = 3,5 \\text{ m} \\)) y la altura vertical respecto al eje X (\\( y = 1,5 \\text{ m} \\)).<br>
-                    Calculamos la distancia en el eje X (cateto contiguo) usando el Teorema de Pitágoras:<br>
-                    \\[ x = \\sqrt{r^2 - y^2} = \\sqrt{3,5^2 - 1,5^2} = \\sqrt{12,25 - 2,25} = \\sqrt{10} \\approx 3,16 \\text{ m} \\]
-                    Con esto, extraemos el coseno del ángulo \\(\\alpha\\) (ángulo entre la fuerza y el eje X), que usaremos para proyectar los vectores:<br>
-                    \\[ \\cos(\\alpha) = \\frac{\\text{cateto contiguo}}{\\text{hipotenusa}} = \\frac{\\sqrt{10}}{3,5} \\approx 0,9035 \\]
-                </div>
-            `
-        } */
+/*     {
+
+    }     */
     ],
     "sistemas": [
 /*     {
