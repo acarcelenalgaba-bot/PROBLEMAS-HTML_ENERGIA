@@ -309,7 +309,7 @@ const baseDatosProblemas = {
         },
         {
             titulo: "Problema 3: Conservación de la energía y choques",
-            enunciado: "En el sistema de la figura se tiene que \\(m_1 = 1 \\text{ kg}, h = 1 \\text{ m}, m_2 = 0,5 \\text{ kg}, K = 200 \\text{ N/m}\\), y el rozamiento es nulo. Al dejar suelta \\(m_1\\), cae y comprime el muelle. Calculad: <br> a) La velocidad de \\(m_1\\) al chocar con la otra masa y la máxima deformación del muelle. <br> b) Tras el choque, \\(m_1\\) y \\(m_2\\) salen despedidas juntas. Calculad con qué velocidad empezarán a subir, y hasta qué altura lo harán. <br> <br> <div style='text-align: center; margin-bottom: 20px;'> <img src='img/felas_2.png' style='max-width: 50%;height: auto; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);'> </div> ",
+            enunciado: "En el sistema de la figura se tiene que \\(m_1 = 1 \\text{ kg}, h = 1 \\text{ m}, m_2 = 0,5 \\text{ kg}, K = 200 \\text{ N/m}\\), y el rozamiento es nulo. Al dejar suelta \\(m_1\\), cae y comprime el muelle. Calculad: <br> a) La velocidad de \\(m_1\\) al chocar con la otra masa y la máxima deformación del muelle. <br> b) Tras el choque, \\(m_1\\) y \\(m_2\\) salen despedidas juntas. Calculad con qué velocidad empezarán a subir, y hasta qué altura lo harán. <br> <br> <div style='text-align: center; margin-bottom: 20px;'> <img src='img/felas_2.png' style='width: 50rem; max-width: 100%;height: auto; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);'> </div> ",
             solucion: `
                 <div class='paso'>
                     <strong>a) Velocidad de choque y deformación:</strong><br>
@@ -338,7 +338,7 @@ const baseDatosProblemas = {
     "conservacion": [
         {
             titulo: "Problema 1: Altura en un plano inclinado",
-            enunciado: "Un cuerpo se mueve a una velocidad de 72 km/h cuando se encuentra con un plano inclinado a 45º. Si la masa del cuerpo es de 10 kg y se supone que no existe rozamiento entre el cuerpo y el plano, halla la altura que alcanza el cuerpo sobre el plano hasta que se detiene. <br> <br> <div style='text-align: center; margin-bottom: 20px;'> <img src='img/conservacion_1.png' style='max-width: 50%;height: auto; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);'> </div> ",
+            enunciado: "Un cuerpo se mueve a una velocidad de 72 km/h cuando se encuentra con un plano inclinado a 45º. Si la masa del cuerpo es de 10 kg y se supone que no existe rozamiento entre el cuerpo y el plano, halla la altura que alcanza el cuerpo sobre el plano hasta que se detiene. <br> <br> <div style='text-align: center; margin-bottom: 20px;'> <img src='img/conservacion_1.png' style='width: 50rem; max-width: 100%;height: auto; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);'> </div> ",
             solucion:`<div class='paso'>
                     <strong>1. Conversión de unidades:</strong><br>
                     Convertimos la velocidad a m/s: &nbsp \\(v = 72 \\text{ km/h} = \\frac{72}{3,6} = 20 \\text{ m/s}\\).
@@ -357,7 +357,7 @@ const baseDatosProblemas = {
         },
         {
             titulo: "Problema 2: Vagoneta en la montaña rusa",
-            enunciado: "La vagoneta de la montaña rusa tiene una masa de 200 kg y se encuentra parado a la altura de 18 m. Cuando alcanza su punto más bajo (B) se encuentra a 3 metros de altura e inicia un looping con un diámetro de 6 m. Halla: <br> a) Energía mecánica de la vagoneta en los puntos A, B y C. <br> b) Velocidad de la vagoneta en los puntos B y C. <br> <br> <div style='text-align: center; margin-bottom: 20px;'> <img src='img/conservacion_2.png' style='max-width: 50%;height: auto; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);'> </div> ",
+            enunciado: "La vagoneta de la montaña rusa tiene una masa de 200 kg y se encuentra parado a la altura de 18 m. Cuando alcanza su punto más bajo (B) se encuentra a 3 metros de altura e inicia un looping con un diámetro de 6 m. Halla: <br> a) Energía mecánica de la vagoneta en los puntos A, B y C. <br> b) Velocidad de la vagoneta en los puntos B y C. <br> <br> <div style='text-align: center; margin-bottom: 20px;'> <img src='img/conservacion_2.png' style='width: 50rem; max-width: 100%;height: auto; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);'> </div> ",
             solucion: `
                 <div class='paso'>
                     <strong>a) Cálculo de la energía mecánica (\\(E_m\\)):</strong><br>
@@ -371,7 +371,7 @@ const baseDatosProblemas = {
                     <strong>b) Cálculo de las velocidades en los puntos B y C:</strong><br>
                      La energía mecánica se conserva a lo largo del recorrido (sin rozamiento), por lo que:
                     \\[E_{mA} = E_{mB} = E_{mC}\\]
-                    <br> <div style='text-align: center; margin-bottom: 20px;'> <img src='img/conservacion_2_1.png' style='max-width: 50%;height: auto; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);'> </div> <br>
+                    <br> <div style='text-align: center; margin-bottom: 20px;'> <img src='img/conservacion_2_1.png' style='width: 50rem; max-width: 100%;height: auto; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);'> </div> <br>
                     Para el punto B:<br>
                     \\[E_{mA} = E_{mB} \\hspace{0.25cm} \\rightarrow \\hspace{0.25cm} E_{mA} = \\frac{1}{2} \\cdot m \\cdot v_B^2 + m \\cdot g \\cdot h_B\\]
                     \\[35280 = \\frac{1}{2} \\cdot 200 \\cdot v_B^2 + 200 \\cdot 9,8 \\cdot 3\\]
@@ -461,7 +461,7 @@ const baseDatosProblemas = {
     "no-conservativas": [
         {
             titulo: "Problema 1: Choque sobre un muelle horizontal",
-            enunciado: "Un bloque de 5,0 kg choca con una velocidad de 10 \\( \\ce{m \\cdot s^{-1}} \\) contra un muelle de constante elástica \\( \\ce{ k = 25 \\\ N \\cdot m^{-1} } \\). El coeficiente de rozamiento entre el bloque y la superficie horizontal es 0,20. Calcula la longitud que se comprime el muelle. <br> <br> <div style='text-align: center; margin-bottom: 20px;'> <img src='img/no_cons_1.png' style='max-width: 30%;height: auto; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);'> </div> ",
+            enunciado: "Un bloque de 5,0 kg choca con una velocidad de 10 \\( \\ce{m \\cdot s^{-1}} \\) contra un muelle de constante elástica \\( \\ce{ k = 25 \\\ N \\cdot m^{-1} } \\). El coeficiente de rozamiento entre el bloque y la superficie horizontal es 0,20. Calcula la longitud que se comprime el muelle. <br> <br> <div style='text-align: center; margin-bottom: 20px;'> <img src='img/no_cons_1.png' style='width: 50rem; max-width: 100%;height: auto; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);'> </div> ",
             solucion: `<div class='paso'>
                     Para resolver este problema, aplicamos el principio de conservación de la energía teniendo en cuenta el trabajo realizado por la fuerza de rozamiento. La energía cinética inicial del bloque se convierte en energía potencial elástica almacenada en el muelle y el trabajo realizado por la fuerza de rozamiento. Planteamos la ecuación de conservación de energía:
                     \\[E_{c0} = E_{pe} + W_r\\]
@@ -485,7 +485,7 @@ const baseDatosProblemas = {
         },
                 {
             titulo: "Problema 2: Pelota de pinball",
-            enunciado: "Una pelota en un pinball es lanzada inicialmente por un muelle comprimido 2 cm. La constante del muelle es k = 3200 N/m. La pelota tiene una masa de 80 g. Sabiendo que el pinball tiene una inclinación de 15◦ y que el coeficiente de rozamiento entre la pelota y la superficie del pinball es 0,05, determina: <br> a) La velocidad con la que sale la pelota del muelle. <br> b) La altura que alcanza la pelota. <br> <br> <div style='text-align: center; margin-bottom: 20px;'> <img src='img/conservacion_5.png' style='max-width: 30%;height: auto; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);'> </div> ",
+            enunciado: "Una pelota en un pinball es lanzada inicialmente por un muelle comprimido 2 cm. La constante del muelle es k = 3200 N/m. La pelota tiene una masa de 80 g. Sabiendo que el pinball tiene una inclinación de 15◦ y que el coeficiente de rozamiento entre la pelota y la superficie del pinball es 0,05, determina: <br> a) La velocidad con la que sale la pelota del muelle. <br> b) La altura que alcanza la pelota. <br> <br> <div style='text-align: center; margin-bottom: 20px;'> <img src='img/conservacion_5.png' style='width: 50rem; max-width: 100%;height: auto; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);'> </div> ",
             solucion: `<div class='paso'>
                     <strong>a) Cálculo de la velocidad de lanzamiento:</strong><br>
                     La energía potencial elástica almacenada en el muelle se convierte en energía cinética al soltarlo (sin rozamiento):<br>
@@ -533,7 +533,7 @@ const baseDatosProblemas = {
         {
 
             titulo: "Problema 4: Chica en el trineo",
-            enunciado: "Una chica se deja caer con su trineo por una ladera nevada inclinada 30◦ sobre la horizontal. Cuando recorre 30 metros entra en un lago helado y desliza por su superficie hasta que choca con un muelle que amortigua su impacto. La masa de la chica es de 70 kg y la del trineo 10 kg. El coeficiente de rozamiento con la nieve es μ = 0,2 y prácticamente nulo con la superficie del lado helado. Determina: <br> a) La energía perdida por rozamiento. <br> b) La velocidad con la que llega a la superficie del lago. <br> c) La compresión del muelle, sabiendo que su constante elástica es k = 10 kN/m. <br> <br> <div style='text-align: center; margin-bottom: 20px;'> <img src='img/conservacion_7.png' style='width: 30%;height: auto; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);'> </div> ",
+            enunciado: "Una chica se deja caer con su trineo por una ladera nevada inclinada 30◦ sobre la horizontal. Cuando recorre 30 metros entra en un lago helado y desliza por su superficie hasta que choca con un muelle que amortigua su impacto. La masa de la chica es de 70 kg y la del trineo 10 kg. El coeficiente de rozamiento con la nieve es μ = 0,2 y prácticamente nulo con la superficie del lado helado. Determina: <br> a) La energía perdida por rozamiento. <br> b) La velocidad con la que llega a la superficie del lago. <br> c) La compresión del muelle, sabiendo que su constante elástica es k = 10 kN/m. <br> <br> <div style='text-align: center; margin-bottom: 20px;'> <img src='img/conservacion_7.png' style='width: 50rem; max-width: 100%;height: auto; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);'> </div> ",
             solucion: `<div class='paso'>
                     <strong>a) Cálculo de la energía perdida por rozamiento:</strong><br>
                     El trabajo realizado por la fuerza de rozamiento es: \\(W_r = F_r \\cdot d \\cdot \\cos  \\\ (180^\\circ) =  - \\mu \\cdot N \\cdot d = - \\mu \\cdot m \\cdot g \\cdot \\cos \\\ (30^\\circ) \\cdot d \\).<br>
