@@ -280,62 +280,82 @@ const baseDatosProblemas = {
         }
     ],
     "elastica": [
-    {
-        titulo: "Problema 1: Energía elástica y rozamiento",
-        enunciado: "Un resorte de constante K = 4000 N/m se comprime una distancia de 0,4 m. Se apoya en él un objeto de 6 kg de masa. Se suelta el muelle y el objeto es lanzado en una superficie horizontal en la que la fuerza de rozamiento vale 27 N. Calcular: <br> a) la velocidad con que sale lanzado el objeto. <br> b) la distancia que recorre el objeto antes de pararse.",
-        solucion: `
-            <div class='paso'>
-                <strong>a) Cálculo de la velocidad de lanzamiento:</strong><br>
-                La energía potencial elástica almacenada en el muelle se transforma íntegramente en energía cinética (suponiendo que el muelle se suelta en el punto de equilibrio):<br>
-                \\[E_{pe} = \\frac{1}{2} \\cdot K \\cdot x^2 = \\frac{1}{2} \\cdot 4000 \\cdot (0,4)^2 = 320 \\text{ J}\\]
-                Igualamos a la energía cinética (\\(E_c = \\frac{1}{2} \\cdot m \\cdot v^2\\)) para despejar la velocidad:<br>
-                \\[320 = \\frac{1}{2} \\cdot 6 \\cdot v^2 \\implies v^2 = \\frac{320}{3} \\implies v = \\sqrt{106,67} \\approx 10,33 \\text{ m/s}\\]
-                <span class='resultado'>Resultado: &nbsp \\(v \\approx 10,3 \\text{ m/s}\\)</span>
-            </div>
-            <div class='paso'>
-                <strong>b) Distancia hasta detenerse:</strong><br>
-                El trabajo de la fuerza de rozamiento debe consumir toda la energía cinética del objeto hasta pararlo (\\(W_r = \\Delta E_c\\)):<br>
-                \\[W_r = F_r \\cdot x \\implies 320 = 27 \\cdot x\\]
-                \\[x = \\frac{320}{27} \\approx 11,85 \\text{ m}\\]
-                <span class='resultado'>Resultado: &nbsp \\(x = 11,85 \\text{ m}\\)</span>
-            </div>
-        `
-    },
-    {
-        titulo: "Problema 2: Conservación de la energía y choques",
-        enunciado: "En el sistema de la figura se tiene que \\(m_1 = 1 \\text{ kg}, h = 1 \\text{ m}, m_2 = 0,5 \\text{ kg}, K = 200 \\text{ N/m}\\), y el rozamiento es nulo. Al dejar suelta \\(m_1\\), cae y comprime el muelle. Calculad: <br> a) La velocidad de \\(m_1\\) al chocar con la otra masa y la máxima deformación del muelle. <br> b) Tras el choque, \\(m_1\\) y \\(m_2\\) salen despedidas juntas. Calculad con qué velocidad empezarán a subir, y hasta qué altura lo harán. <br> <br> <div style='text-align: center; margin-bottom: 20px;'> <img src='img/felas_2.png' style='max-width: 50%;height: auto; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);'> </div> ",
-        solucion: `
-            <div class='paso'>
-                <strong>a) Velocidad de choque y deformación:</strong><br>
-                La velocidad de \\(m_1\\) antes del choque se obtiene por conservación de energía mecánica:<br>
-                \\[m_1 \\cdot g \\cdot h = \\frac{1}{2} \\cdot m_1 \\cdot v^2 \\implies v = \\sqrt{2 \\cdot g \\cdot h} = \\sqrt{2 \\cdot 9,8 \\cdot 1} \\approx 4,43 \\text{ m/s}\\]
-                Para la deformación máxima, asumimos que tras el choque (que suele considerarse inelástico para que compriman juntos) la energía cinética del sistema se convierte en elástica. <br>
-                Primero hallamos la velocidad del conjunto (\\(v'\\)) por conservación del momento lineal:<br>
-                \\[m_1 \\cdot v = (m_1 + m_2) \\cdot v' \\implies 1 \\cdot 4,43 = 1,5 \\cdot v' \\implies v' \\approx 2,95 \\text{ m/s}\\]
-                Energía cinética del conjunto = Energía elástica máxima:<br>
-                \\[\\frac{1}{2} \\cdot (m_1 + m_2) \\cdot (v')^2 = \\frac{1}{2} \\cdot K \\cdot x^2\\]
-                \\[\\frac{1}{2} \\cdot (1,5) \\cdot (2,95)^2 = \\frac{1}{2} \\cdot 200 \\cdot x^2 \\implies 6,52 = 100 x^2 \\implies x \\approx 0,255 \\text{ m}\\]
-                <span class='resultado'>Resultados: &nbsp \\( v = 4,43 \\text{ m/s}\\); &nbsp \\(x = 0,255 \\text{ m}\\)</span>
-            </div>
-            <div class='paso'>
-                <strong>b) Velocidad de ascenso y altura máxima:</strong><br>
-                Como el enunciado indica que tras la compresión salen despedidas juntas y el rozamiento es nulo, la velocidad inicial de subida es la misma que calculamos tras el choque: \\(v' = 2,95 \\text{ m/s}\\).<br>
-                Para la altura final (\\(h'\\)), aplicamos de nuevo conservación de energía:<br>
-                \\[\\frac{1}{2} \\cdot M \\cdot (v')^2 = M \\cdot g \\cdot h' \\implies h' = \\frac{(v')^2}{2 \\cdot g}\\]
-                \\[h' = \\frac{2,95^2}{2 \\cdot 9,8} = \\frac{8,70}{19,6} \\approx 0,44 \\text{ m}\\]
-                <span class='resultado'>Resultados: &nbsp \\(v' = 2,95 \\text{ m/s}\\); &nbsp \\(h' = 0,44 \\text{ m}\\)</span>
-            </div>
-        `
-        }    
+        {
+            titulo: "Problema 1: Muelle vertical",
+            enunciado: "Al colgar un cuerpo de 10 kg de un muelle vertical se produce un alargamiento de 7,2 cm. Calcula: <br> </>a) La constante elástica del muelle. <br> b) La energía potencial elástica almacenada.",
+            solucion: `
+            `
+        },
+        {
+            titulo: "Problema 2: Energía elástica y rozamiento",
+            enunciado: "Un resorte de constante K = 4000 N/m se comprime una distancia de 0,4 m. Se apoya en él un objeto de 6 kg de masa. Se suelta el muelle y el objeto es lanzado en una superficie horizontal en la que la fuerza de rozamiento vale 27 N. Calcular: <br> a) la velocidad con que sale lanzado el objeto. <br> b) la distancia que recorre el objeto antes de pararse.",
+            solucion: `
+                <div class='paso'>
+                    <strong>a) Cálculo de la velocidad de lanzamiento:</strong><br>
+                    La energía potencial elástica almacenada en el muelle se transforma íntegramente en energía cinética (suponiendo que el muelle se suelta en el punto de equilibrio):<br>
+                    \\[E_{pe} = \\frac{1}{2} \\cdot K \\cdot x^2 = \\frac{1}{2} \\cdot 4000 \\cdot (0,4)^2 = 320 \\text{ J}\\]
+                    Igualamos a la energía cinética (\\(E_c = \\frac{1}{2} \\cdot m \\cdot v^2\\)) para despejar la velocidad:<br>
+                    \\[320 = \\frac{1}{2} \\cdot 6 \\cdot v^2 \\implies v^2 = \\frac{320}{3} \\implies v = \\sqrt{106,67} \\approx 10,33 \\text{ m/s}\\]
+                    <span class='resultado'>Resultado: &nbsp \\(v \\approx 10,3 \\text{ m/s}\\)</span>
+                </div>
+                <div class='paso'>
+                    <strong>b) Distancia hasta detenerse:</strong><br>
+                    El trabajo de la fuerza de rozamiento debe consumir toda la energía cinética del objeto hasta pararlo (\\(W_r = \\Delta E_c\\)):<br>
+                    \\[W_r = F_r \\cdot x \\implies 320 = 27 \\cdot x\\]
+                    \\[x = \\frac{320}{27} \\approx 11,85 \\text{ m}\\]
+                    <span class='resultado'>Resultado: &nbsp \\(x = 11,85 \\text{ m}\\)</span>
+                </div>
+            `
+        },
+        {
+            titulo: "Problema 3: Conservación de la energía y choques",
+            enunciado: "En el sistema de la figura se tiene que \\(m_1 = 1 \\text{ kg}, h = 1 \\text{ m}, m_2 = 0,5 \\text{ kg}, K = 200 \\text{ N/m}\\), y el rozamiento es nulo. Al dejar suelta \\(m_1\\), cae y comprime el muelle. Calculad: <br> a) La velocidad de \\(m_1\\) al chocar con la otra masa y la máxima deformación del muelle. <br> b) Tras el choque, \\(m_1\\) y \\(m_2\\) salen despedidas juntas. Calculad con qué velocidad empezarán a subir, y hasta qué altura lo harán. <br> <br> <div style='text-align: center; margin-bottom: 20px;'> <img src='img/felas_2.png' style='max-width: 50%;height: auto; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);'> </div> ",
+            solucion: `
+                <div class='paso'>
+                    <strong>a) Velocidad de choque y deformación:</strong><br>
+                    La velocidad de \\(m_1\\) antes del choque se obtiene por conservación de energía mecánica:<br>
+                    \\[m_1 \\cdot g \\cdot h = \\frac{1}{2} \\cdot m_1 \\cdot v^2 \\implies v = \\sqrt{2 \\cdot g \\cdot h} = \\sqrt{2 \\cdot 9,8 \\cdot 1} \\approx 4,43 \\text{ m/s}\\]
+                    Para la deformación máxima, asumimos que tras el choque (que suele considerarse inelástico para que compriman juntos) la energía cinética del sistema se convierte en elástica. <br>
+                    Primero hallamos la velocidad del conjunto (\\(v'\\)) por conservación del momento lineal:<br>
+                    \\[m_1 \\cdot v = (m_1 + m_2) \\cdot v' \\implies 1 \\cdot 4,43 = 1,5 \\cdot v' \\implies v' \\approx 2,95 \\text{ m/s}\\]
+                    Energía cinética del conjunto = Energía elástica máxima:<br>
+                    \\[\\frac{1}{2} \\cdot (m_1 + m_2) \\cdot (v')^2 = \\frac{1}{2} \\cdot K \\cdot x^2\\]
+                    \\[\\frac{1}{2} \\cdot (1,5) \\cdot (2,95)^2 = \\frac{1}{2} \\cdot 200 \\cdot x^2 \\implies 6,52 = 100 x^2 \\implies x \\approx 0,255 \\text{ m}\\]
+                    <span class='resultado'>Resultados: &nbsp \\( v = 4,43 \\text{ m/s}\\); &nbsp \\(x = 0,255 \\text{ m}\\)</span>
+                </div>
+                <div class='paso'>
+                    <strong>b) Velocidad de ascenso y altura máxima:</strong><br>
+                    Como el enunciado indica que tras la compresión salen despedidas juntas y el rozamiento es nulo, la velocidad inicial de subida es la misma que calculamos tras el choque: \\(v' = 2,95 \\text{ m/s}\\).<br>
+                    Para la altura final (\\(h'\\)), aplicamos de nuevo conservación de energía:<br>
+                    \\[\\frac{1}{2} \\cdot M \\cdot (v')^2 = M \\cdot g \\cdot h' \\implies h' = \\frac{(v')^2}{2 \\cdot g}\\]
+                    \\[h' = \\frac{2,95^2}{2 \\cdot 9,8} = \\frac{8,70}{19,6} \\approx 0,44 \\text{ m}\\]
+                    <span class='resultado'>Resultados: &nbsp \\(v' = 2,95 \\text{ m/s}\\); &nbsp \\(h' = 0,44 \\text{ m}\\)</span>
+                </div>
+            `
+        }
+
     ],
     "conservacion": [
-/*     {
+        {
+            titulo: "Problema 1: Altura en un plano inclinado",
+            enunciado: "Un cuerpo se mueve a una velocidad de 72 km/h cuando se encuentra con un plano inclinado a 45º. Si la masa del cuerpo es de 10 kg y se supone que no existe rozamiento entre el cuerpo y el plano, halla la altura que alcanza el cuerpo sobre el plano hasta que se detiene. <br> <br> <div style='text-align: center; margin-bottom: 20px;'> <img src='img/conservacion_1.png' style='max-width: 50%;height: auto; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);'> </div> ",
+            solucion: `
+            `
+        },
+        {
+            titulo: "Problema 2: Vagoneta en la montaña rusa",
+            enunciado: "La vagoneta de la montaña rusa tiene una masa de 200 kg y se encuentra parado a la altura de 18 m. Cuando alcanza su punto más bajo (B) se encuentra a 3 metros de altura e inicia un looping con un diámetro de 6 m. Halla: <br> a) Energía mecánica de la vagoneta en los puntos A, B y C. <br> b) Velocidad de la vagoneta en los puntos B y C. <br> <br> <div style='text-align: center; margin-bottom: 20px;'> <img src='img/conservacion_2.png' style='max-width: 50%;height: auto; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);'> </div> ",
+            solucion: `
+            `
+        },
 
-    }     */
     ],
-    "sistemas": [
-/*     {
-
-    }     */
+    "no-conservativas": [
+        {
+            titulo: "Problema 1: Choque sobre un muelle horizontal",
+            enunciado: "Un bloque de 5,0 kg choca con una velocidad de 10 \\( \\ce{m \\cdot s^{-1}} \\) contra un muelle de constante elástica \\( \\ce{ k = 25 \\\ N \\cdot m^{-1} } \\). El coeficiente de rozamiento entre el bloque y la superficie horizontal es 0,20. Calcula la longitud que se comprime el muelle.",
+            solucion: `
+            `
+        },
     ]
 };
