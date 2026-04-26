@@ -510,7 +510,7 @@ const baseDatosProblemas = {
             `
         },
                 {
-            titulo: "Problema 3: Diseño de la montaña rusa",
+            titulo: "Problema 3: Diseño de la montaña rusa por ingenieros",
             enunciado: "Un grupo de ingenieros está diseñando una montaña rusa para un parque de atracciones. Para ahorrar energía, los ingenieros quieren que los vagones suban el último tramo sin consumo eléctrico. El último tramo tiene una longitud de 10 metros y una inclinación de 60◦ sobre la horizontal. El rozamiento entre los raíles y los vagones es de μ = 0,1. Determina la velocidad con la que deben entrar los vagones en el plano inclinado para que estos lleguen a la parte superior con velocidad nula.", 
             solucion: `<div class='paso'>
                     Para que los vagones lleguen a la parte superior con velocidad nula, toda la energía cinética inicial debe ser consumida por el trabajo de la fuerza de rozamiento y la energía potencial ganada al subir el plano inclinado. Planteamos la ecuación de conservación de energía considerando ambos factores:
