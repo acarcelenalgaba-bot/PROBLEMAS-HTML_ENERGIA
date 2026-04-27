@@ -172,6 +172,86 @@ const baseDatosProblemas = {
                     Para comparar las velocidades de los dos móviles, debemos observar la pendiente de las gráficas de posición-tiempo. El móvil con la pendiente más pronunciada se mueve a mayor velocidad. En este caso, el móvil A tiene una pendiente más pronunciada que el móvil B, lo que indica que el móvil A se mueve a mayor velocidad que el móvil B.
                 </div> 
             `
+        },
+        {
+            titulo: "Problema 7: Cálculo de distancia recorrida con velocidad constante",
+            enunciado: "¿Qué distancia recorre en 40 min un automóvil que se mueve en línea recta con velocidad constante de 70 km/h? Expresa la distancia en metros. ",
+            solucion: ` <div class='paso'>
+                <strong>Datos:</strong> <br>
+                Velocidad (\\(v\\)) = 70 km/h <br>
+                Tiempo (\\(t\\)) = 40 min <br>
+                <strong>1. Cálculo de la distancia recorrida:</strong><br>
+                Para calcular la distancia recorrida por el automóvil, utilizamos la fórmula de la velocidad: \\(v = \\frac{x}{t}\\), donde \\(v\\) es la velocidad, \\(x\\) es la distancia y \\(t\\) es el tiempo. <br> Primero, convertimos el tiempo de minutos a horas: \\(40 \\text{ min} = \\frac{40}{60} \\text{ h} = 0,667 \\text{ h}\\). <br> Luego, despejamos la distancia: \\[x = v \\cdot t = 70 \\text{ km/h} \\cdot 0,667 \\text{ h} = 46,67 \\text{ km}\\]. Finalmente, convertimos la distancia a metros: \\[46,67 \\text{ km} = 46670 \\text{ m}\\].<br> <span class='resultado'>Resultado: &nbsp 46,67 km = 46670 m</span>
+            `
+        },
+        {
+            titulo: "Problema 8: Cálculo de posición y distancia recorrida con velocidad constante",
+            enunciado: "Un móvil que se desplaza en línea recta a la velocidad constante de 30 m/s está situado a 150 m del origen de las distancias. ¿Qué posición ocupará dentro de 12 s? ¿Qué distancia habrá recorrido en estos 12 s? ",
+            solucion: ` <div class='paso'> 
+                <strong>Datos:</strong> <br>
+                Velocidad (\\(v\\)) = 30 m/s <br>
+                Tiempo (\\(t\\)) = 12 s <br>
+                Posición inicial (\\(s_0\\)) = 150 m <br>
+                <strong>1. Cálculo de la posición después de 12 segundos:</strong><br>
+                Para calcular la posición del móvil después de 12 segundos, utilizamos la fórmula de la posición para un movimiento con velocidad constante: \\[s = s_0 + v \\cdot t\\]. Sustituyendo los valores: \\[s = 150 \\text{ m} + 30 \\text{ m/s} \\cdot 12 \\text{ s} = 150 \\text{ m} + 360 \\text{ m} = 510 \\text{ m}\\].<br> <span class='resultado'>Resultado: &nbsp La posición del móvil después de 12 segundos es 510 m.</span>
+            </div>
+            <div class='paso'>
+                <strong>2. Cálculo de la distancia recorrida en 12 segundos:</strong><br>
+                La distancia recorrida por el móvil se calcula utilizando la fórmula de la distancia para un movimiento con velocidad constante: \\[d = v \\cdot t\\]. Sustituyendo los valores: \\[d = 30 \\text{ m/s} \\cdot 12 \\text{ s} = 360 \\text{ m}\\].<br> <span class='resultado'>Resultado: &nbsp La distancia recorrida por el móvil en 12 segundos es 360 m.</span>
+            </div>
+             ` 
+        },
+        {
+            titulo: "Problema 9: Cálculo de distancia recorrida con velocidad constante",
+            enunciado: "Un cuerpo se desplaza a una velocidad constante de 25 m/s en línea recta. Representa las gráficas velocidad-tiempo y posición-tiempo, si s<sub>0</sub> = 0.",
+            solucion: ` <div class='paso'>
+                <strong>Datos:</strong> <br>
+                Velocidad (\\(v\\)) = 25 m/s <br>
+                Posición inicial (\\(s_0\\)) = 0 m <br>
+                <strong>1. Gráfica velocidad-tiempo (v-t):</strong><br>
+                La gráfica de velocidad-tiempo para un movimiento con velocidad constante es una línea horizontal. En este caso, la línea estaría a la altura de 25 m/s en el eje de velocidad, y se extendería a lo largo del tiempo. Esto indica que la velocidad del cuerpo es constante a lo largo del tiempo.
+            </div>
+            <div class='paso'>
+                <strong>2. Gráfica posición-tiempo (s-t):</strong><br>
+                La gráfica de posición-tiempo para un movimiento con velocidad constante es una línea recta con pendiente positiva. En este caso, la pendiente de la línea sería igual a la velocidad (25 m/s). La línea comenzaría en el origen (0,0) y se extendería hacia arriba a medida que el tiempo avanza, indicando que la posición del cuerpo aumenta de manera lineal con el tiempo. Por ejemplo, después de 1 segundo, la posición sería 25 m; después de 2 segundos, sería 50 m; y así sucesivamente.
+            </div>
+             ` 
+        },
+        {
+            titulo: "Problema 10: Cálculo de distancia recorrida con velocidad constante",
+            enunciado: "La representación gráfica del movimiento de un cuerpo es la que aparece en la gura. Contesta las siguientes cuestiones: <br> a) ¿Qué tipo de movimiento ha tenido en cada tramo? Razona la respuesta. <br>  b) ¿Cuál ha sido la velocidad en cada tramo? <br>  c) ¿Qué espacio ha recorrido al cabo de los 10 segundos? <br>  d) ¿Cuál ha sido el desplazamiento del móvil? <div style='text-align: center; margin-bottom: 20px;'> <img src='img/ficha2_10.png' style='width: 50rem; max-width: 100%;height: auto; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);'> </div> ",
+            solucion: ` <div class='paso'>
+                <strong>a) Tipo de movimiento en cada tramo:</strong><br>
+                En el primer tramo (0 a 4 segundos), el cuerpo se mueve a una velocidad constante, lo que indica un Movimiento Rectilíneo Uniforme (MRU). En el segundo tramo (4 a 7 segundos), el cuerpo se detiene, lo que también es un MRU pero con velocidad cero. En el tercer tramo (7 a 10 segundos), el cuerpo se mueve nuevamente a una velocidad constante pero en dirección opuesta, lo que también es un MRU.
+            </div>
+            <div class='paso'>
+                <strong>b) Velocidad en cada tramo:</strong><br>
+                En el primer tramo, la velocidad es positiva y constante. En el segundo tramo, la velocidad es cero. En el tercer tramo, la velocidad es negativa y constante.
+            </div>
+            <div class='paso'>
+                <strong>c) Espacio recorrido al cabo de los 10 segundos:</strong><br>
+                El espacio recorrido es la suma de las distancias absolutas recorridas en cada tramo. En el primer tramo, el cuerpo recorre una distancia positiva. En el segundo tramo, no se recorre ninguna distancia. En el tercer tramo, el cuerpo recorre una distancia negativa (en dirección opuesta). La distancia total recorrida sería la suma de las distancias absolutas de cada tramo.
+            </div>
+            <div class='paso'>
+                <strong>d) Desplazamiento del móvil:</strong><br>
+                El desplazamiento es la diferencia entre la posición final y la posición inicial del móvil. En este caso, el desplazamiento sería la posición final después de los 10 segundos menos la posición inicial al inicio del movimiento. Dado que el móvil se mueve en dirección opuesta en el tercer tramo, el desplazamiento podría ser menor que el espacio recorrido total.
+            </div> 
+        
+            ` 
+        },
+        {
+            titulo: "Problema 11: Distancia recorrida por guepardo",
+            enunciado: "Un guepardo corre durante 10 s a una velocidad constante de 90 km/h. ¿Qué distancia ha recorrido?",
+            solucion: `
+            <div class='paso'>
+                <strong>Datos:</strong> <br>
+                Velocidad (\\(v\\)) = 90 km/h <br>
+                Tiempo (\\(t\\)) = 10 s <br>
+                <strong>1. Cálculo de la distancia recorrida:</strong><br>
+                Primero, convertimos la velocidad de km/h a m/s: \\(90 \\text{ km/h} = 25 \\text{ m/s}\\). Luego, utilizamos la fórmula de la velocidad: \\(v = \\frac{d}{t}\\). Despejamos la distancia: \\[d = v \\cdot t = 25 \\text{ m/s} \\cdot 10 \\text{ s} = 250 \\text{ m}\\].<br> <span class='resultado'>Resultado: &nbsp El guepardo ha recorrido 250 metros.</span>
+            </div>
+
+            ` 
         }
     ],
     "ficha3": [
