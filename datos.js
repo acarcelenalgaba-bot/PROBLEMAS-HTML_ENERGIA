@@ -149,88 +149,75 @@ const baseDatosProblemas = {
     ],
     "fuerzas_vivas": [
         {
-            titulo: "Problema 1: Frenado y peso del coche",
-            enunciado: "Un coche marcha a una velocidad de 25 m/s. Se accionan los frenos y reduce su velocidad a 15 m/s en un tiempo de 4 segundos. Si la fuerza empleada por los frenos es de 500 N, calcular el peso del coche.",
+            titulo: "Problema 1: Aceleración de coche",
+            enunciado: "Un coche de masa 1200 kg se desplaza por una carretera horizontal a una velocidad de 20 m/s. En un momento determinado el coche acelera hasta alcanzar 90 km/h. Despreciando el rozamiento, se pide: <br>a) La energía cinética inicial. <br>b) El trabajo que realiza el motor para aumentar la velocidad. ",
             solucion: `
                 <div class='paso'>
-                    <strong>1. Cálculo de la aceleración (frenado):</strong><br>
-                    Utilizamos la fórmula de la cinemática: \\(a = \\frac{v_f - v_0}{t}\\)<br>
-                    \\[a = \\frac{15 - 25}{4} = -2,5 \\text{ m/s}^2\\]
-                    El signo negativo indica que es una deceleración. Para el cálculo de la masa usaremos el módulo: \\(2,5 \\text{ m/s}^2\\).
+                    <strong>a) Cálculo de la energía cinética inicial:</strong><br>
+                    \\[E_{c0} = \\frac{1}{2} m v_0^2 = \\frac{1}{2} \\cdot 1200 \\cdot (20)^2 = 240000 \\text{ J}\\]
+                    <span class='resultado'>Resultado: &nbsp \\(E_{c0} = 2,4 \\cdot 10^5 \\text{ J}\\)</span>
                 </div>
                 <div class='paso'>
-                    <strong>2. Cálculo de la masa (Segunda Ley de Newton):</strong><br>
-                    \\[m = \\frac{F}{a} = \\frac{500}{2,5} = 200 \\text{ kg}\\]
+                    <strong>b) Cálculo del trabajo del motor:</strong><br>
+                    Según el teorema de la energía cinética (fuerzas vivas) por ausencia de fuerzas no conservativas (rozamiento), el trabajo realizado por el motor es igual a la variación de la energía cinética:<br>
+                    \\[W = \\Delta E_c = E_{cf} - E_{c0}\\]
+                    Primero calculamos la energía cinética final (90 km/h = 25 m/s):<br>
+                    \\[E_{cf} = \\frac{1}{2} m v_f^2 = \\frac{1}{2} \\cdot 1200 \\cdot (25)^2 = 375000 \\text{ J}\\]
+                    Luego:<br>
+                    \\[W = 375000 - 240000 = 135000 \\text{ J}\\]
+                    <span class='resultado'>Resultado: &nbsp \\(W = 1,35 \\cdot 10^5 \\text{ J}\\)</span>
                 </div>
-                <div class='paso'>
-                    <strong>3. Cálculo del peso:</strong><br>
-                    Usando \\(g = 9,8 \\text{ m/s}^2\\):<br>
-                    \\[P = m \\cdot g = 200 \\cdot 9,8 = 1960 \\text{ N}\\]
-                    <span class='resultado'>Resultado: &nbsp P = 1960 N</span>
-                </div>
+
             `
         },
         {
-            titulo: "Problema 2: Frenado por rozamiento",
-            enunciado: "Un objeto de 4 kg de masa entra en una superficie horizontal con una velocidad inicial de 9 m/s. Si la fuerza de rozamiento entre las superficies es 10 N, calcular el espacio que recorre antes de pararse.",
+            titulo: "Problema 2: Pelota rebotando",
+            enunciado: "Una pelota de 65 g de masa golpea la pared de un frontón con una velocidad de 90 km/h y rebota en la misma dirección con velocidad de 22 m/s. ¿Qué cantidad de energía cinética ha perdido?",
             solucion: `
                 <div class='paso'>
-                    <strong>1. Cálculo de la aceleración de frenado:</strong><br>
-                    La única fuerza horizontal es el rozamiento (en sentido contrario):<br>
-                    \\[a = \\frac{-F_r}{m} = \\frac{-10}{4} = -2,5 \\text{ m/s}^2\\]
+                    <strong>1. Cálculo de la energía cinética inicial:</strong><br>
+                    \\[E_{c0} = \\frac{1}{2} \\cdot m \\cdot v_0^2 = \\frac{1}{2} \\cdot 0,065 \\cdot (25)^2 = 20,3125 \\text{ J}\\]
                 </div>
                 <div class='paso'>
-                    <strong>2. Cálculo de la distancia (espacio):</strong><br>
-                    Usamos la ecuación de la velocidad independiente del tiempo: \\(\\\ v_f^2 = v_0^2 + 2 \\cdot a \\cdot x\\). Como se para, \\(v_f = 0\\):<br>
-                    \\[0 = 9^2 + 2 \\cdot (-2,5) \\cdot x\\]
-                    \\[0 = 81 - 5 \\cdot x \\implies x = \\frac{81}{5} = 16,2 \\text{ m}\\]
-                    <span class='resultado'>Resultado: &nbsp x = 16,2 m</span>
+                    <strong>2. Cálculo de la energía cinética final:</strong><br>
+                    \\[E_{cf} = \\frac{1}{2} \\cdot m \\cdot v_f^2 = \\frac{1}{2} \\cdot 0,065 \\cdot (22)^2 = 15,73 \\text{ J}\\]
                 </div>
+                <div class='paso'>
+                    <strong>3. Cálculo de la energía cinética perdida:</strong><br>Considerando el teorema de las fuerzas vivas, la energía perdida es la diferencia entre la energía cinética inicial y la final:<br>
+                    \\[\\Delta E_c = E_{c0} - E_{cf} = 20,3125 - 15,73 = 4,5825 \\text{ J}\\]
+                    <span class='resultado'>Resultado: &nbsp 4,58 J</span>
+                </div>
+
             `
         },
         {
-            titulo: "Problema 3: Trabajo y energía con rozamiento",
-            enunciado: "Al lanzar un objeto de 0,5 kg de masa en un plano horizontal con rozamiento de 3,25 N, éste recorre una distancia de 4 metros antes de pararse. Calcular:<br> a) el trabajo realizado por la fuerza de rozamiento. <br> b) la energía cinética inicial del objeto. <br> c) la velocidad inicial del objeto.",
+            titulo: "Problema 3: Explosión de pólvora en un cañón",
+            enunciado: "Al explotar la pólvora en el cañón de un fusil origina una fuerza constante que actúa sobre el proyectil de 20 g de masa. La longitud del cañón es de 60 cm y el proyectil sale a una velocidad de 250 m/s. Calcula: <br>a) La variación de energía cinética del proyectil. <br>b) El trabajo mecánico realizado por la explosión de la pólvora. <br>c) La fuerza que actúa sobre el proyectil.",
             solucion: `
                 <div class='paso'>
-                    <strong>a) Trabajo de rozamiento:</strong><br>
-                    El rozamiento se opone al movimiento (\\(180^\\circ\\)):<br>
-                    \\[W_r = F_r \\cdot x \\cdot \\cos \\\ (180^\\circ) = 3,25 \\cdot 4 \\cdot (-1) = -13 \\text{ J}\\]
-                    <span class='resultado'>Resultados: &nbsp - 13 J</span>
+                Planteamos el problema utilizando el teorema de las fuerzas vivas, que establece que el trabajo realizado por las fuerzas sobre un cuerpo es igual a la variación de su energía cinética. En este caso, la fuerza constante que actúa sobre el proyectil durante su recorrido por el cañón realiza un trabajo que se traduce en un aumento de la energía cinética del proyectil. <br><br>
+                    <strong>a) Cálculo de la variación de energía cinética:</strong><br>
+                    \\[\\Delta E_c = E_{cf} - E_{c0} = \\frac{1}{2} \\cdot m \\cdot v_f^2 - \\frac{1}{2} \\cdot m \\cdot v_0^2\\]
+                    \\[\\Delta E_c = \\frac{1}{2} \\cdot 0,020 \\cdot (250)^2 - 0 = 6250 \\text{ J}\\]
                 </div>
                 <div class='paso'>
-                    <strong>b) Energía cinética inicial:</strong><br>
-                    Por el teorema del trabajo y la energía: \\(W_{ext} = \\Delta E_c = E_{cf} - E_{c0}\\). Como se para, \\(E_{cf} = 0\\):<br>
-                    \\[-13 = 0 - E_{c0} \\implies E_{c0} = 13 \\text{ J}\\]
-                    <span class='resultado'>Resultados: &nbsp 13 J </span>
+                    <strong>b) Cálculo del trabajo mecánico:</strong><br>
+                    Según el teorema del trabajo y la energía, el trabajo realizado es igual a la variación de la energía cinética:<br>
+                    \\[W = \\Delta E_c = 6250 \\text{ J}\\]
                 </div>
                 <div class='paso'>
-                    <strong>c) Velocidad inicial:</strong><br>
-                    \\[E_{c0} = \\frac{1}{2} m v_0^2 \\implies 13 = \\frac{1}{2} \\cdot 0,5 \\cdot v_0^2\\]
-                    \\[v_0 = \\sqrt{\\frac{13}{0,25}} = \\sqrt{52} \\approx 7,21 \\text{ m/s}\\]
-                    <span class='resultado'>Resultados: &nbsp 7,21 m/s</span>
+                    <strong>c) Cálculo de la fuerza:</strong><br>
+                    La fuerza que actúa sobre el proyectil se puede calcular usando la fórmula del trabajo:<br>
+                    \\[W = F \\cdot x\\]
+                    Despejando F:<br>
+                    \\[F = \\frac{W}{x} = \\frac{6250}{0,6} = 10416,67 \\text{ N}\\]
+                    <span class='resultado'>Resultado: &nbsp 10416,67 N</span>
                 </div>
+
             `
         },
         {
-            titulo: "Problema 4: Energía y aceleración",
-            enunciado: "Un bloque de masa 1,2 toneladas es acelerado por una fuerza exterior de 10 a 20 m/s. ¿Cuánta energía ha recibido?. ¿De quién?.",
-            solucion: `
-                <div class='paso'>
-                    <strong>1. Cálculo de la energía recibida (\\(\\Delta E_c\\)):</strong><br>
-                    Masa: \\(m = 1200 \\text{ kg}\\).<br>
-                    \\[\\Delta E_c = \\frac{1}{2} \\cdot m \\cdot (v_f^2 - v_0^2) = \\frac{1}{2} \\cdot 1200 \\cdot (20^2 - 10^2)\\]
-                    \\[\\Delta E_c = 600 \\cdot (400 - 100) = 600 \\cdot 300 = 180000 \\text{ J}\\]
-                </div>
-                <div class='paso'>
-                    <strong>2. Origen de la energía:</strong><br>
-                    La energía ha sido recibida de la <strong>fuerza exterior</strong> que realiza el trabajo sobre el bloque. <br>
-                    <span class='resultado'>Resultado: &nbsp 180000 J (180 kJ)</span>
-                </div>
-            `
-        },
-        {
-            titulo: "Problema 5: Disipación de energía",
+            titulo: "Problema 4: Disipación de energía",
             enunciado: "Un coche posee una energía cinética de \\(7,2 \\cdot 10^4 \\text{ J}\\), el viento lo frena y su energía disminuye hasta \\(3,2 \\cdot 10^4 \\text{ J}\\) tras recorrer 40 m. Calcula: <br> a) ¿En qué se ha invertido la energía? <br> b) El trabajo realizado por el viento. <br> c) La fuerza ejercida por el viento.",solucion: `
                 <div class='paso'>
                     <strong>a) Transformación de la energía:</strong><br>
@@ -242,7 +229,7 @@ const baseDatosProblemas = {
                     \\[W = \\Delta E_c = E_{cf} - E_{c0}\\]
                     \\[W = 3,2 \\cdot 10^4 - 7,2 \\cdot 10^4 = - 4,0 \\cdot 10^4 \\text{ J}\\]
                     El signo negativo indica que el trabajo es resistente (se opone al movimiento). <br>
-                    <span class='resultado'>Resultados: &nbsp W = - 40000 J</span>
+                    <span class='resultado'>Resultados: &nbsp W = &minus; 40000 J</span>
                 </div>
                 <div class='paso'>
                     <strong>c) Cálculo de la fuerza del viento (F):</strong><br>
@@ -254,27 +241,16 @@ const baseDatosProblemas = {
             `
         },
         {
-            titulo: "Problema 6: Coeficiente de rozamiento en plano inclinado",
-            enunciado: "Un cuerpo comienza a deslizar por un plano inclinado con rozamiento. La energía inicial es 20 kJ y cuando llega al final su energía es 15 kJ. Si el plano tiene una inclinación de 30°, ¿cuál es el coeficiente de rozamiento?",
+            titulo: "Problema 5: Coche incrustado en una pared",
+            enunciado: "Un coche de masa 500 kg se mueve con una velocidad de 108 km/h cuando choca contra una pared, halla el trabajo que ha realizado sobre la citada pared.",
             solucion: `
                 <div class='paso'>
-                    <strong>1. Trabajo de rozamiento (\\(W_r\\)):</strong><br>
-                    La pérdida de energía es el trabajo realizado por el rozamiento:<br>
-                    \\[W_r = E_f - E_i = 15000 - 20000 = - 5000 \\text{ J}\\]
-                </div>
-                <div class='paso'>
-                    <strong>2. Relación con la altura y distancia:</strong><br>
-                    La energía inicial es potencial: \\(E_i = m \\cdot g \\cdot h = 20000 \\text{ J}\\).<br>
-                    En un plano de \\(30^\\circ\\), la altura \\(h\\) y la distancia recorrida \\(d\\) se relacionan: \\(h = d \\cdot sen \\\ (30^\\circ) = 0,5 \\cdot d\\).<br>
-                    Sustituyendo: \\(m \\cdot g \\cdot (0,5 \\cdot d) = 20000 \\implies m \\cdot g \\cdot d = 40000\\).
-                </div>
-                <div class='paso'>
-                    <strong>3. Cálculo del coeficiente (\\(\\mu\\)):</strong><br>
-                    El trabajo de rozamiento es \\(W_r = -F_r \\cdot d = -(\\mu \\cdot m \\cdot g \\cdot \\cos \\\ (30^\\circ)) \\cdot d\\).<br>
-                    \\[-5000 = -\\mu \\cdot (m \\cdot g \\cdot d) \\cdot \\cos \\\ (30^\\circ)\\]
-                    \\[5000 = \\mu \\cdot 40000 \\cdot 0,866\\]
-                    \\[\\mu = \\frac{5000}{34640} \\approx 0,144\\]
-                    <span class='resultado'>Resultado: &nbsp \\( \\mu \\approx 0,14 \\)</span>
+                    <strong>Cálculo del trabajo realizado sobre la pared:</strong><br>
+                    Según el teorema de las fuerzas vivas, el trabajo neto es igual a la variación de la energía cinética:<br>
+                    \\[W = \\Delta E_c = E_{cf} - E_{c0}\\]
+                    \\[W = 0 - \\frac{1}{2} \\cdot 500 \\cdot (30)^2 = -225000 \\text{ J}\\]
+                    El signo negativo indica que el trabajo es resistente (se opone al movimiento). <br>
+                    <span class='resultado'>Resultados: &nbsp W = &minus; 225000 J</span>
                 </div>
             `
         }
@@ -455,6 +431,29 @@ const baseDatosProblemas = {
                 </div>
             `
 
+        },
+        {
+            titulo: "Problema 6. Pendulo en movimiento",
+            enunciado: "Un péndulo de 1 m de longitud se separa 10\\(^{\\circ}\\) de su posición de equilibrio y se suelta. Calcular la velocidad con la que regresa a la posición inicial.",  
+            solucion: `
+                <div class='paso'>
+                <br> <br> <div style='text-align: center; margin-bottom: 20px;'> <img src='img/conservacion_6.png' style='width: 30rem; max-width: 100%;height: auto; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);'> </div>
+                Para resolver este problema, aplicamos el principio de conservación de la energía. La energía potencial gravitatoria máxima se convierte completamente en energía cinética cuando el péndulo pasa por la posición de equilibrio. Planteamos la ecuación de conservación de energía:
+                    \\[E_{p} = E_{c}\\]
+                La energía potencial gravitatoria máxima se calcula como: \\(E_{p} = m \\cdot g \\cdot h\\), donde \\(h\\) es la altura máxima alcanzada por el péndulo. <br> Para encontrar \\(h\\), utilizamos la relación entre el ángulo de separación y la altura en un péndulo: \\(h = L - L \\cdot cos (\\theta) = L \\cdot (1 - cos \\\ (\\theta))\\), donde \\(L\\) es la longitud del péndulo y \\(\\theta\\) es el ángulo de separación.<br>
+                <br> <br> <div style='text-align: center; margin-bottom: 20px;'> <img src='img/conservacion_6_1.png' style='width: 10rem; max-width: 100%;height: 10rem; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);'> </div> <br>
+                Sustituyendo los valores: \\[h = 1 \\cdot (1 - cos \\\ (10^\\circ)) \\approx 1 \\cdot (1 - 0,9848) = 0,0152 \\text{ m}\\]<br>
+                La energía cinética en la posición de equilibrio es: \\(E_{c} = \\frac{1}{2} \\cdot m \\cdot v^2\\), donde \\(v\\) es la velocidad que queremos encontrar.<br>
+                Igualando las energías:<br>
+                    \\[m \\cdot g \\cdot h = \\frac{1}{2} \\cdot m \\cdot v^2\\]
+                Simplificando por la masa (que no es cero):<br>
+                    \\[g \\cdot h = \\frac{1}{2} \\cdot v^2\\]
+                Despejando la velocidad:<br>
+                    \\[v = \\sqrt{2 \\cdot g \\cdot h} = \\sqrt{2 \\cdot 9,8 \\cdot 0,0152} \\approx 0,545 \\text{ m/s}\\]
+                    <span class='resultado'>Resultado: &nbsp v = 0,55 m/s</span>
+            </div>            
+            `
+
         }
         
     ],
@@ -594,6 +593,29 @@ const baseDatosProblemas = {
                     \\[v_f = \\sqrt{20,46} \\approx 4,52 \\text{ m/s}\\]
                     <span class='resultado'>Resultado: &nbsp v = 4,52 m/s</span>   
             `
+        },
+        {
+            titulo: "Problema 6: Bloque con rozamiento",
+            enunciado: "En el sistema de la figura, para el bloque que se encuentra a 0,6 m de altura y cuya masa, m = 4 kg, calcular: <br>a) La velocidad del bloque en el punto 1. <br>b) La distancia que recorre antes de pararse, si la fuerza de rozamiento en el tramo horizontal es 6 N. <br> <br> <div style='text-align: center; margin-bottom: 20px;'> <img src='img/no_cons_6.png' style='width: 30rem; max-width: 100%;height: auto; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);'> </div>",
+            solucion: `<div class='paso'>
+                    <strong>a) Cálculo de la velocidad en el punto 1:</strong><br>
+                    La energía potencial inicial se convierte completamente en energía cinética al llegar al punto 1 (sin rozamiento):<br>
+                    \\[E_p = E_c \\implies m \\cdot g \\cdot h = \\frac{1}{2} \\cdot m \\cdot v^2\\]
+                    Sustituyendo los valores: \\[4 \\cdot 9,8 \\cdot 0,6 = \\frac{1}{2} \\cdot 4 \\cdot v^2\\]
+                    \\[v^2 = \\frac{4 \\cdot 9,8 \\cdot 0,6}{2} = 11,76\\]
+                    \\[v = \\sqrt{11,76} \\approx 3,43 \\text{ m/s}\\]
+                    <span class='resultado'>Resultado: &nbsp v = 3,43 m/s</span>
+                </div>
+                <div class='paso'>
+                    <strong>b) Cálculo de la distancia recorrida antes de pararse:</strong><br>
+                    El trabajo realizado por la fuerza de rozamiento es igual a la energía cinética inicial, ya que el bloque se detiene al recorrer cierta distancia (d):<br>
+                    \\[W_r = - F_r \\cdot d = - E_c\\]
+                    La energía cinética inicial es: \\(E_c = \\frac{1}{2} \\cdot m \\cdot v^2 = \\frac{1}{2} \\cdot 4 \\cdot 3,43^2 = 23,52 \\text{ J}\\).<br>
+                    Sustituyendo en la ecuación del trabajo:<br>
+                    \\[- 6 \\cdot d = - 23,52\\]    
+                    \\[d = \\frac{23,52}{6} = 3,92 \\text{ m}\\]
+                    <span class='resultado'>Resultado: &nbsp d = 3,92 m</span>
+                `
         }
     ]
 };
