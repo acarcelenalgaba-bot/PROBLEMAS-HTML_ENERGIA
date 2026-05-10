@@ -217,32 +217,37 @@ const baseDatosProblemas = {
             `
         },
         {
-            titulo: "Problema 4: Disipación de energía",
-            enunciado: "Un coche posee una energía cinética de \\(7,2 \\cdot 10^4 \\text{ J}\\), el viento lo frena y su energía disminuye hasta \\(3,2 \\cdot 10^4 \\text{ J}\\) tras recorrer 40 m. Calcula: <br> a) ¿En qué se ha invertido la energía? <br> b) El trabajo realizado por el viento. <br> c) La fuerza ejercida por el viento.",solucion: `
-                <div class='paso'>
-                    <strong>a) Transformación de la energía:</strong><br>
-                    La energía cinética que el coche ha perdido se ha invertido en realizar un <strong>trabajo mecánico contra la resistencia del aire</strong>. Esta energía se disipa finalmente en forma de <strong>calor</strong> (energía térmica) debido al rozamiento de las moléculas de aire contra la carrocería del vehículo.
-                </div>
-                <div class='paso'>
-                    <strong>b) Cálculo del trabajo realizado por el viento (W):</strong><br>
-                    Según el teorema de las fuerzas vivas, el trabajo neto es igual a la variación de la energía cinética:<br>
-                    \\[W = \\Delta E_c = E_{cf} - E_{c0}\\]
-                    \\[W = 3,2 \\cdot 10^4 - 7,2 \\cdot 10^4 = - 4,0 \\cdot 10^4 \\text{ J}\\]
-                    El signo negativo indica que el trabajo es resistente (se opone al movimiento). <br>
-                    <span class='resultado'>Resultados: &nbsp W = &minus; 40000 J</span>
-                </div>
-                <div class='paso'>
-                    <strong>c) Cálculo de la fuerza del viento (F):</strong><br>
-                    Sabiendo que el trabajo es \\(W = F \\cdot x \\cdot \\cos \\\ (\\alpha)\\) y que el viento actúa en sentido contrario al movimiento (\\(\\alpha = 180^\\circ\\)):<br>
-                    \\[-40000 = F \\cdot 40 \\cdot (-1)\\]
-                    \\[F = \\frac{- 40000}{-40} = 1000 \\text{ N}\\]
-                    <span class='resultado'>Resultados: &nbsp F = 1000 N</span>
+            titulo: "Problema 4: Plano inclinado y velocidad final",
+            enunciado: "Una caja de 10 kg sube por la acción de una fuerza de 200 N por una rampa con un ángulo de 37°. Sabiendo que el coeficiente de rozamiento entre la caja y la rampa es de 0,1 y la rampa mide 5 m de longitud, calcula la velocidad con qué llegará arriba si partió del reposo.",
+            solucion: `
+                <div class='paso'>  
+                    Para resolver este problema, aplicamos el teorema de las fuerzas vivas, que establece que el trabajo neto realizado sobre un cuerpo es igual a la variación de su energía cinética. En este caso, la fuerza aplicada por la caja realiza un trabajo positivo, mientras que la componente del peso en el eje paralelo a la rampa (x) y la fuerza de rozamiento realizan trabajos negativos.
+                     <br> <br> <div style='text-align: center; margin-bottom: 20px;'> <img src='img/fuerzas_vivas_4.png' style='width: 30rem; max-width: 100%;height: 15rem; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);'> </div>
+                    <strong>Cálculo del trabajo neto:</strong><br>
+                    - Trabajo de la fuerza aplicada: \\(W_{aplicada} = F \\cdot x = 200 \\cdot 5 = 1000 \\text{ J}\\)<br>
+                    - Trabajo de la componente del peso: \\(W_{peso} = -m \\cdot g \\cdot sen \\\ (\\alpha) \\cdot x = -10 \\cdot 9,8 \\cdot sen \\\ (37^\\circ) \\cdot 5 \\approx -294 \\text{ J}\\)<br>
+                    - Trabajo de la fuerza de rozamiento: \\(W_{rozamiento} = -\\mu \\cdot N \\cdot x\\)<br>
+                    <strong>Cálculo de la velocidad final:</strong><br>
+                    Usando el teorema de las fuerzas vivas: \\(W_{neto} = \\Delta E_c = \\frac{1}{2} m (v_f^2 - v_i^2)\\)<br>
+                    Dado que la caja parte del reposo (\\(v_i = 0\\)), la fórmula se simplifica a:<br>
+                    \\[v_f = \\sqrt{\\frac{2 \\cdot W_{neto}}{m}}\\]
+                    Para calcular el trabajo neto, necesitamos conocer la fuerza normal (N) para el cálculo del trabajo de rozamiento. La fuerza normal en un plano inclinado se calcula como:<br>
+                    \\[N = m \\cdot g \\cdot \\cos(\\alpha)\\]
+                    Donde \\(\\alpha\\) es el ángulo de la rampa (37°)<br>
+                    \\[N = 10 \\cdot 9,8 \\cdot \\cos(37^\\circ) \\approx 78,4 \\text{ N}\\]
+                    Luego, el trabajo de rozamiento es:<br>
+                    \\[W_{rozamiento} = -0,1 \\cdot 78,4 \\cdot 5 = -39,2 \\text{ J}\\]
+                    El trabajo neto es:<br>
+                    \\[W_{neto} = W_{aplicada} + W_{peso} + W_{rozamiento} = 1000 - 294 - 39,2 = 666,8 \\text{ J}\\]
+                    Finalmente, la velocidad final es:<br>
+                    \\[v_f = \\sqrt{\\frac{2 \\cdot 666,8}{10}} = \\sqrt{133,36} \\approx 11,55 \\text{ m/s}\\]
+                    <span class='resultado'>Resultado: &nbsp v \\(\\approx\\) 11,55 m/s</span>
                 </div>
             `
         },
         {
             titulo: "Problema 5: Coche incrustado en una pared",
-            enunciado: "Un coche de masa 500 kg se mueve con una velocidad de 108 km/h cuando choca contra una pared, halla el trabajo que ha realizado sobre la citada pared.",
+            enunciado: "Un coche de masa 500 kg se mueve con una velocidad de 108 km/h cuando choca contra una pared. Halla el trabajo que ha realizado sobre la citada pared.",
             solucion: `
                 <div class='paso'>
                     <strong>Cálculo del trabajo realizado sobre la pared:</strong><br>
