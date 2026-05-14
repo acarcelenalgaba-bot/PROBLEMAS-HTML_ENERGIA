@@ -322,7 +322,7 @@ const baseDatosProblemas = {
             enunciado: "Un cuerpo se mueve a una velocidad de 72 km/h cuando se encuentra con un plano inclinado a 45º. Si la masa del cuerpo es de 10 kg y se supone que no existe rozamiento entre el cuerpo y el plano, halla la altura que alcanza el cuerpo sobre el plano hasta que se detiene. <br> <br> <div style='text-align: center; margin-bottom: 20px;'> <img src='img/conservacion_1.png' style='width: 30rem; max-width: 100%;height: 15rem; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);'> </div> ",
             solucion:`<div class='paso'>
                     <strong>1. Conversión de unidades:</strong><br>
-                    Convertimos la velocidad a m/s: &nbsp \\(v = 72 \\text{ km/h} = \\frac{72}{3,6} = 20 \\text{ m/s}\\).
+                    Convertimos la velocidad a m/s: &nbsp \\(v = 72 \\text{ km/h} = 72 \\cdot \\frac{1000 \\\ m }{1 \\\ km} \\cdot \\frac{1 \\\ h}{3600 \\\ s} = 20 \\text{ m/s}\\).
                 </div>
                 <div class='paso'>
                     <strong>2. Cálculo de la energía cinética inicial:</strong><br>
@@ -330,7 +330,7 @@ const baseDatosProblemas = {
                 </div>
                 <div class='paso'>
                     <strong>3. Cálculo de la altura máxima (h):</strong><br>
-                    La energía cinética se convierte completamente en energía potencial gravitatoria al alcanzar la altura máxima:<br>
+                    Aplicando el principio de conservación de la energía mecanica: &nbsp  \\( \\Delta E_m = 0 \\implies E_{m1} = E_{m2} \\) <br> La energía cinética se convierte completamente en energía potencial gravitatoria al alcanzar la altura máxima:<br>
                     \\[E_c = E_p \\implies \\frac{1}{2} \\cdot m \\cdot v^2 = m \\cdot g \\cdot h \\implies h = \\frac{v^2}{2 g} = \\frac{20^2}{2 \\cdot 9,8} = \\frac{400}{19,6} \\approx 20,41 \\text{ m}\\]
                     <span class='resultado'>Resultado: &nbsp h = 20,41 m</span>
                 </div>
