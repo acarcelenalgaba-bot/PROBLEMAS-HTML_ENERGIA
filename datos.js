@@ -228,8 +228,8 @@ const baseDatosProblemas = {
                     - Trabajo de la componente del peso: \\(W_{peso} = -m \\cdot g \\cdot sen \\\ (\\alpha) \\cdot x = -10 \\cdot 9,8 \\cdot sen \\\ (37^\\circ) \\cdot 5 \\approx -294 \\text{ J}\\)<br>
                     - Trabajo de la fuerza de rozamiento: \\(W_{rozamiento} = -\\mu \\cdot N \\cdot x\\)<br>
                     <strong>Cálculo de la velocidad final:</strong><br>
-                    Usando el teorema de las fuerzas vivas: \\(W_{neto} = \\Delta E_c = \\frac{1}{2} \\cdot m \\cdot v_f^2 - \\frac{1}{2} \\cdot m \\cdot v_i^2\\)<br>
-                    Dado que la caja parte del reposo (\\(v_i = 0\\)), la fórmula se simplifica a:<br>
+                    Usando el teorema de las fuerzas vivas: &nbsp \\(W_{neto} = \\Delta E_c = Ec_f - Ec_i = \\frac{1}{2} \\cdot m \\cdot v_f^2 - \\frac{1}{2} \\cdot m \\cdot v_i^2\\)<br>
+                    Dado que la caja parte del reposo (\\(v_i = 0\\)), la fórmula se simplifica a: &nbsp \\(W_{neto} = \\frac{1}{2} \\cdot m \\cdot v_f^2\\)<br>
                     \\[v_f = \\sqrt{\\frac{2 \\cdot W_{neto}}{m}}\\]
                     Para calcular el trabajo neto, necesitamos conocer la fuerza normal (N) para el cálculo del trabajo de rozamiento. La fuerza normal en un plano inclinado se calcula como:<br>
                     \\[N = m \\cdot g \\cdot \\cos(\\alpha)\\]
