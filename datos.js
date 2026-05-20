@@ -506,7 +506,7 @@ const baseDatosProblemas = {
                     Haciendo uso del principio de conservación de la energía considerando el trabajo de rozamiento, podemos determinar la altura máxima que alcanza la pelota. &nbsp  \\(\\Delta E_m = W_r\\) <br>
                     \\[E_{pf} - E_{ci} = W_r\\]
                     La energía cinética inicial se convierte en energía potencial y trabajo de rozamiento al subir por el pinball. La altura máxima se alcanza cuando la velocidad es cero:
-                    \\[E_c = E_p - W_r\\]
+                    \\[E_{ci} = E_{pf} - W_r\\]
                     La energía cinética inicial es: \\(E_c = \\frac{1}{2} \\cdot 0,08 \\cdot 4^2 = 0,64 \\text{ J}\\).<br>
                     El trabajo de rozamiento se calcula como: \\(W_r = F_r \\cdot d \\cdot \\ cos \\\ 180 \\), donde \\(F_r = \\mu \\cdot m \\cdot g \\cdot \\cos \\\ (15^\\circ)\\) y la distancia (d) se relaciona con la altura (h) por la inclinación: \\(\\\ d = \\frac{h}{sen \\\ (15^\\circ)}\\).<br>
                     Sustituyendo: \\[0,64 = m \\cdot g \\cdot h + \\mu \\cdot m \\cdot g \\cdot \\cos \\\ (15^\\circ) \\cdot \\frac{h} { sen \\\ (15^\\circ)}\\]
