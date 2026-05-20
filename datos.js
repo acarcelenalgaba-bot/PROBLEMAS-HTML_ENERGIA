@@ -511,8 +511,8 @@ const baseDatosProblemas = {
                     El trabajo de rozamiento se calcula como: \\(W_r = F_r \\cdot d \\cdot \\ cos \\\ 180 \\), donde \\(F_r = \\mu \\cdot m \\cdot g \\cdot \\cos \\\ (15^\\circ)\\) y la distancia (d) se relaciona con la altura (h) por la inclinación: \\(\\\ d = \\frac{h}{sen \\\ (15^\\circ)}\\).<br>
                     Sustituyendo: \\[0,64 = m \\cdot g \\cdot h + \\mu \\cdot m \\cdot g \\cdot \\cos \\\ (15^\\circ) \\cdot \\frac{h} { sen \\\ (15^\\circ)}\\]
                     \\[0,64 = 0,08 \\cdot 9,8 \\cdot h + 0,05 \\cdot 0,08 \\cdot 9,8 \\cdot 3,73 \\cdot h\\]
-                    \\[0,64 = 0,08 \\cdot 9,8 \\cdot h \\cdot (1 + 0,18)\\]
-                    \\[h = \\frac{0,64}{0,08 \\cdot 9,8 \\cdot 1,18} \\approx 0,691 \\text{ m}\\]
+                    \\[0,64 = 0,784 \\cdot h + 0,146 \\cdot h\\]
+                    \\[h = \\frac{0,64}{0,93} \\approx 0,688 \\text{ m}\\]
                     <span class='resultado'>Resultado: &nbsp h = 0,69 m</span>
             `
         },
