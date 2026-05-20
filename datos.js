@@ -491,10 +491,11 @@ const baseDatosProblemas = {
             titulo: "Problema 2: Pelota de pinball",
             enunciado: "Una pelota en un pinball es lanzada inicialmente por un muelle comprimido 2 cm. La constante del muelle es k = 3200 N/m. La pelota tiene una masa de 80 g. Sabiendo que el pinball tiene una inclinación de 15◦ y que el coeficiente de rozamiento entre la pelota y la superficie del pinball es 0,05, determina: <br> a) La velocidad con la que sale la pelota del muelle. <br> b) La altura que alcanza la pelota. <br> <br> <div style='text-align: center; margin-bottom: 20px;'> <img src='img/no_cons_2.png' style='width: 20rem; max-width: 100%;height: auto; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);'> </div> ",
             solucion: `<div class='paso'>
-                    <strong>a) Cálculo de la velocidad de lanzamiento:</strong><br>
-                    La energía potencial elástica almacenada en el muelle se convierte en energía cinética al soltarlo (sin rozamiento):<br>
+                <br> <br> <div style='text-align: center; margin-bottom: 20px;'> <img src='img/no_cons_2a.png' style='width: 50rem; max-width: 100%;height: auto; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);'> </div> 
+                <strong>a) Cálculo de la velocidad de lanzamiento:</strong><br>
+                La energía potencial elástica almacenada en el muelle se convierte en energía cinética al soltarlo (sin rozamiento):
                     \\[E_{pe} = \\frac{1}{2} \\cdot k \\cdot x^2 = \\frac{1}{2} \\cdot 3200 \\cdot (0,02)^2 = 0,64 \\text{ J}\\]
-                    Igualamos a la energía cinética para despejar la velocidad:<br>
+                    Igualamos a la energía cinética para despejar la velocidad:
                     \\[0,64 = \\frac{1}{2} \\cdot 0,08 \\cdot v^2\\]
                     \\[v^2 = \\frac{0,64}{0,04} = 16\\]
                     \\[v = 4 \\text{ m/s}\\]
@@ -502,15 +503,17 @@ const baseDatosProblemas = {
                 </div>
                 <div class='paso'>
                     <strong>b) Cálculo de la altura alcanzada:</strong><br>
-                    La energía cinética inicial se convierte en energía potencial y trabajo de rozamiento al subir por el pinball. La altura máxima se alcanza cuando la velocidad es cero:<br>
-                    \\[E_c = E_p + W_r\\]
-                    La energía cinética inicial es: \\(E_c = 0,64 \\text{ J}\\).<br>
-                    El trabajo de rozamiento se calcula como: \\(W_r = F_r \\cdot d\\), donde \\(F_r = \\mu \\cdot m \\cdot g \\cdot \\cos \\\ (15^\\circ)\\) y la distancia (d) se relaciona con la altura (h) por la inclinación: \\(\\\ d = \\frac{h}{sen \\\ (15^\\circ)}\\).<br>
-                    Sustituyendo: \\[0,64 = m \\cdot g \\cdot h + \\mu \\cdot m \\cdot g \\cdot \\cos \\\ (15^\\circ) \\cdot \\frac{h}{ sen \\\ (15^\\circ)}\\]
-                    \\[0,64 = 0,08 \\cdot 9,8 \\cdot h + 0,05 \\cdot 0,08 \\cdot 9,8 \\cdot h\\]
-                    \\[0,64 = 0,08 \\cdot 9,8 \\cdot h (1 + 0,05)\\]
-                    \\[h = \\frac{0,64}{0,08 \\cdot 9,8 \\cdot 1,05} \\approx 0,777 \\text{ m}\\]
-                    <span class='resultado'>Resultado: &nbsp h = 0,78 m</span>
+                    Haciendo uso del principio de conservación de la energía considerando el trabajo de rozamiento, podemos determinar la altura máxima que alcanza la pelota. &nbsp  \\(\\Delta E_m = W_r\\) <br>
+                    \\[E_{pf} - E_{ci} = W_r\\]
+                    La energía cinética inicial se convierte en energía potencial y trabajo de rozamiento al subir por el pinball. La altura máxima se alcanza cuando la velocidad es cero:
+                    \\[E_c = E_p - W_r\\]
+                    La energía cinética inicial es: \\(E_c = \\frac{1}{2} \\cdot 0,08 \\cdot 4^2 = 0,64 \\text{ J}\\).<br>
+                    El trabajo de rozamiento se calcula como: \\(W_r = F_r \\cdot d \\cdot \\ cos \\\ 180 \\), donde \\(F_r = \\mu \\cdot m \\cdot g \\cdot \\cos \\\ (15^\\circ)\\) y la distancia (d) se relaciona con la altura (h) por la inclinación: \\(\\\ d = \\frac{h}{sen \\\ (15^\\circ)}\\).<br>
+                    Sustituyendo: \\[0,64 = m \\cdot g \\cdot h + \\mu \\cdot m \\cdot g \\cdot \\cos \\\ (15^\\circ) \\cdot \\frac{h} { sen \\\ (15^\\circ)}\\]
+                    \\[0,64 = 0,08 \\cdot 9,8 \\cdot h + 0,05 \\cdot 0,08 \\cdot 9,8 \\cdot 3,73 \\cdot h\\]
+                    \\[0,64 = 0,08 \\cdot 9,8 \\cdot h \\cdot (1 + 0,18)\\]
+                    \\[h = \\frac{0,64}{0,08 \\cdot 9,8 \\cdot 1,18} \\approx 0,691 \\text{ m}\\]
+                    <span class='resultado'>Resultado: &nbsp h = 0,69 m</span>
             `
         },
                 {
